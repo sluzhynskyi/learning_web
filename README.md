@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="link_on_site">HTML and CSS Learning</a>
+  <a href="link_on_demo">HTML and CSS Learning</a>
 </h1>
 
 <p align="center">
@@ -10,15 +10,14 @@
   <a title="Demo" href="link_on_demo"><strong>Demo</strong></a>
 </p>
 
-![](https://img.shields.io/github/languages/code-size/sluzhynskyi/repo_name)
-![](https://img.shields.io/github/last-commit/sluzhynskyi/repo_name/master)
-![](https://img.shields.io/github/languages/count/sluzhynskyi/repo_name)
+![](https://img.shields.io/github/languages/code-size/sluzhynskyi/learning_web)
+![](https://img.shields.io/github/last-commit/sluzhynskyi/learning_web/master)
+![](https://img.shields.io/github/languages/count/sluzhynskyi/learning_web)
 ![](https://img.shields.io/github/followers/sluzhynskyi?style=social)
 
 # HTML and CSS Learning
-![repo_name]()
-Description about project
-
+// TODO: load gif about this site </br>
+This project is the dynamic site on poor HTML and CSS, about HTML5 and CSS, (kind of [MDN](https://developer.mozilla.org/en-US/), but a lot simpler)
 ## Documentation :pencil2:
 #### Using:
   - [11ty/Eleventy](https://www.npmjs.com/package/@11ty/eleventy)- For local dynamic serving. 
@@ -27,17 +26,17 @@ Description about project
 ## Quickstart
 
 ### Prerequisites :page_with_curl:
-
-- option1
-- option2
-- option3
+- npm
 
 ### Installing :tongue:
 ```
-$ installing command
+$ npm install eleventy
+$ npm install nunjucks
 ```
 ### Usage :zap:
-Usage description
+```
+$ eleventy --serve
+```
 
 
 

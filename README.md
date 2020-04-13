@@ -26,7 +26,7 @@ This project is the dynamic site on poor HTML and CSS, about HTML5 and CSS, (kin
 ## Quickstart
 
 ### Prerequisites :page_with_curl:
-- npm
+- npm (Node Package Manager)
 
 ### Installing :tongue:
 ```

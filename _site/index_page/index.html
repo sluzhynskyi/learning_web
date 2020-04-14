@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widthitial-scale=1, shrink-to-fit=no">
     <title>
-        {% block Title %}
-        {% endblock %}
+        
+Home
+
     </title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href= {% block CssDir %}{% endblock %} type = "text/css">
+    <link rel="stylesheet" href= 
+"../components/main.css"
+ type = "text/css">
 </head>
 <body>
 <nav class="navbar bg-white">
     <div class="nav-inner">
         <div class="logo-container">
-            <a href="/" class="logo" aria-label="Web Docs"><img src="../_components/img/logo_faster.png" alt="logo" height=55px></a>
+            <a href="/" class="logo" aria-label="Web Docs"><img src="../components/img/logo.png" alt="logo" height=55px></a>
         </div>
-        <div class="form-container">
-            <form class="form-inline" action="javascript:;" onsubmit="scrollToInput()">
-                <input id="input-search" type="search" placeholder="Search"
-                    list="listOfContent"
-                    autocomplete="off" aria-label="Search">
-                <datalist id="listOfContent">
-                    {% block Options %}
-                    {% endblock %}
-                </datalist>
-                <button class="btn" type="submit">Search
-                </button>
-            </form>
+        <div>
+            <ul class="navigation">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/HTML_page">HTML docs</a>
+                </li>
+                <li>
+                    <a href="/CSS_page">CSS docs</a>
+                </li>
+            </ul>
         </div>
-        <ul class="navigation">
-            <li><a href="/">Home</a></li>
-            <li><a href="/HTML_page">HTML docs</a></li>
-            <li><a href="/CSS_page">CSS docs</a></li>
-        </ul>
-
+        
     </div>   
 </nav>
-<h1>{% block HeaderContent %}
-    {% endblock %}</h1>
+<h1>
+    </h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid architecto asperiores autem
     consequuntur cum debitis dicta enim error esse ex, explicabo illo incidunt ipsa ipsam iste minima minus nemo nobis
     nostrum omnis possimus praesentium quis quisquam repellendus vel voluptatum! Assumenda dolorum incidunt molestias
@@ -107,8 +104,8 @@
     corporis debitis dolores doloribus earum fugit harum illum impedit inventore iusto maiores maxime molestiae nisi
     nostrum officia optio, pariatur provident quas tempore, totam veritatis. Aut culpa eligendi esse facere molestias,
     necessitatibus nulla quam quisquam temporibus.</p>
-{% block Content %}
-{% endblock %}
+
+
 
 <script>
     function scrollToInput() {
@@ -122,7 +119,7 @@
     }
 
 </script>
-{#Bootstrap and jquery#}
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

@@ -1,10 +1,12 @@
-{% set something = true %}
 {% extends "base.njk" %}
 {% block Title %}
     CSS
 {% endblock %}
 {% block HeaderContent %}
     Page about CSS
+{% endblock %}
+{% block CssDir %}
+"../_components/main.css"
 {% endblock %}
 
 {% block Options %}

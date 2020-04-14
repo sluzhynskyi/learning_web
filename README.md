@@ -30,7 +30,7 @@ This project is the dynamic site on poor HTML and CSS, about HTML5 and CSS, (kin
 
 ### Installing :tongue:
 ```
-$ npm install eleventy
+$ npm install -g @11ty/eleventy
 $ npm install nunjucks
 ```
 ### Usage :zap:

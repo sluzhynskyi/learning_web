@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widthitial-scale=1, shrink-to-fit=no">
-    <title>
-        {% block Title %}
-        {% endblock %}
-    </title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title> {{ Title }} </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href= {% block CssDir %}{% endblock %} type = "text/css">
+    <link rel="stylesheet" href="{{ CSS_dir }}" type="text/css">
 </head>
-<body>
+<body class="{{ body_class }}">
 <nav class="navbar bg-white">
     <div class="nav-inner">
         <div class="logo-container">
-            <a href="/" class="logo" aria-label="Web Docs"><img src="../_components/img/logo_faster.png" alt="logo" height=55px></a>
+            <a href="/" class="logo" aria-label="Web Docs">{% include "../_components/img/logo.svg" %}</a>
+            {#                <img src="../_components/img/logo_faster.png" alt="logo" height=55px>#}
         </div>
         <div class="form-container">
             <form class="form-inline" action="javascript:;" onsubmit="scrollToInput()">
                 <input id="input-search" type="search" placeholder="Search"
-                    list="listOfContent"
-                    autocomplete="off" aria-label="Search">
+                       list="listOfContent"
+                       autocomplete="off" aria-label="Search">
                 <datalist id="listOfContent">
                     {% block Options %}
                     {% endblock %}
@@ -31,15 +29,14 @@
             </form>
         </div>
         <ul class="navigation">
-            <li><a href="/">Home</a></li>
-            <li><a href="/HTML_page">HTML docs</a></li>
-            <li><a href="/CSS_page">CSS docs</a></li>
+            <li id="home_page"><a href="/">Home</a></li>
+            <li id="html_page"><a href="/HTML_page">HTML docs</a></li>
+            <li id="css_page"><a href="/CSS_page">CSS docs</a></li>
         </ul>
 
-    </div>   
+    </div>
 </nav>
-<h1>{% block HeaderContent %}
-    {% endblock %}</h1>
+<h1>{{ HeaderContent }} </h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid architecto asperiores autem
     consequuntur cum debitis dicta enim error esse ex, explicabo illo incidunt ipsa ipsam iste minima minus nemo nobis
     nostrum omnis possimus praesentium quis quisquam repellendus vel voluptatum! Assumenda dolorum incidunt molestias

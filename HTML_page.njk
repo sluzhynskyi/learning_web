@@ -1,13 +1,8 @@
-{% extends "base.njk" %}
-{% block Title %}
-    Html
-{% endblock %}
-{% block HeaderContent %}
-    Page about HTML
-{% endblock %}
-{% block CssDir %}
-"../_components/main.css"
-{% endblock %}
+{% set CSS_dir = "../_components/main.css" %}
+{% set body_class = "HTML_page" %}
+{% set Title = "HTML docs" %}
+{% set HeaderContent = "Page about HTML" %}
+{% extends "base.njk" %}}
 {% block Options %}
     <option value="<html>">fdsafsda</option>.
     <option value="<header>"></option>

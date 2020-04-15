@@ -1,62 +1,78 @@
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 .bg-white {
-  background-color: white;
+    background-color: white;
 }
+
 .navbar {
-  width: 100%;
-  height: 68px;
-  display: block;
+    width: 100%;
+    height: 68px;
+    display: block;
 }
+
 .nav-inner {
-  width: 95%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  min-width: 750px;
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    min-width: 1000px;
 }
+
 .logo-container {
-  height: 100%;
-  display: table;
-  float: left;
+    height: 100%;
+    display: table;
+    float: left;
 }
+
 .logo-container a {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .navigation {
-  float: right;
-  height: 100%;
+    float: right;
+    height: 100%;
+
 }
 
 .navigation li {
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0 20px;
+    height: 70%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+    margin: 8px 40px;
 }
 
 .navigation li a {
-  display: table-cell;
-  vertical-align: middle;
-  color: black;
-  font-family: "Montserrat", sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+
+}
+
+.CSS_page #css_page, .HTML_page #html_page {
+    background-color: black;
+}
+
+.CSS_page #css_page a, .HTML_page #html_page a {
+    color: white;
 }
 
 .form-container {
-  height: 100%;
-  display: table;
-  float: right;
-  padding-left: 20px;
+    height: 100%;
+    display: table;
+    float: right;
+    padding-left: 40px;
 }
 
 .form-inline {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }

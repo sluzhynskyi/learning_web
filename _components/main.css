@@ -7,7 +7,7 @@
 body {
     background: url(/img/cream_dust.png) repeat 0 0;
     font-family: 'Raleway', sans-serif;
-    min-width: 1200px;
+    min-width: 1300px;
 }
 .bg-white {
     background-color: white;
@@ -83,12 +83,12 @@ body {
 .form-inline {
     display: table-cell;
     vertical-align: middle;
-    width: 300px;
 }
 #input-search {
     padding:14.5px 16px;
     background:rgba(50, 50, 50, 0.2);
     border:0px solid #dbdbdb;
+    width: 250px;
 }
 .btn {
     position:relative;
@@ -129,7 +129,15 @@ body {
     width: 80%;
     margin: 0 auto;
 }
-.titlebar h1 {
+.title {
     font-family: "Zilla Slab", sans-serif;
+    font-size: 39px;
 }
 
+div.block{
+    margin: 20px 0;
+}
+.block h2 {
+    font-family: "Zilla Slab", sans-serif;
+    color: #333;
+}

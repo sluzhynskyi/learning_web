@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widthitial-scale=1, shrink-to-fit=no">
     <title> {{ Title }} </title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Raleway&family=Roboto&family=Zilla+Slab:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Raleway&family=Roboto&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="{{ CSS_dir }}" type="text/css">
 </head>
 <body class="{{ body_class }}">
@@ -38,7 +37,7 @@
     </div>
 </nav>
 <div class="titlebar-container">
-    <div class="titlebar"><h1 class="title">Short Web Documentation</h1></div>
+    <div class="titlebar"><h1 class="title">{{ Title_h1 }}</h1></div>
 </div>
 <div class="main">
     {% block Content %}

@@ -1,6 +1,14 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("_components");
-  return {
-    passthroughFileCopy: true,
-  };
+module.exports = eleventyConfig => {
+    // Copy our static assets to the output folder
+    eleventyConfig.addPassthroughCopy('_components');
+    eleventyConfig.addPassthroughCopy('_includes');
+    // eleventyConfig.addPassthroughCopy('images');
+
+    // Returning something from the configuration function is optional
+    return {
+        dir: {
+            input: '_inputs',
+            includes: "_includes",
+        }
+    };
 };

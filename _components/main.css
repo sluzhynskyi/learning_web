@@ -4,14 +4,17 @@
     list-style: none;
     text-decoration: none;
 }
+
 body {
     background: url(/img/cream_dust.png) repeat 0 0;
     font-family: 'Raleway', sans-serif;
     min-width: 1300px;
 }
+
 .bg-white {
     background-color: white;
 }
+
 .navbar {
     width: 100%;
     height: 68px;
@@ -68,9 +71,9 @@ body {
     color: white;
 }
 
-.navigation li:hover{
+.navigation li:hover {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 .form-container {
@@ -84,34 +87,38 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+
 #input-search {
-    padding:14.5px 16px;
-    background:rgba(50, 50, 50, 0.2);
-    border:0px solid #dbdbdb;
+    padding: 14.5px 16px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 0 solid #dbdbdb;
     width: 250px;
 }
+
 .btn {
-    position:relative;
-    padding:12.5px 15px;
-    left:-8px;
+    position: relative;
+    padding: 12.5px 15px;
+    left: -8px;
     color: #494949;
     text-transform: uppercase;
     text-decoration: none;
     background: #ffffff;
-    border:2px solid black;
+    border: 2px solid black;
 }
-.btn:hover  {
+
+.btn:hover {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 
-.main{
+.main {
     width: 80%;
     margin: 20px auto;
     font-size: 18px;
     text-align: justify;
 }
+
 .titlebar-container {
     display: flex;
     flex-direction: column;
@@ -125,19 +132,54 @@ body {
     width: 100%;
     min-height: 60px;
 }
-.titlebar{
+
+.titlebar {
     width: 80%;
     margin: 0 auto;
 }
+
 .title {
     font-family: "Zilla Slab", sans-serif;
     font-size: 39px;
-}
-
-div.block{
-    margin: 20px 0;
-}
-.block h2 {
-    font-family: "Zilla Slab", sans-serif;
     color: #333;
 }
+
+div.block {
+    margin: 20px 0;
+}
+
+.block h2 {
+    font-family: "Zilla Slab", sans-serif;
+    color: #464646;
+    margin: 3px 0;
+}
+.block h2 :hover {
+    color: #333;
+}
+
+h2 svg {
+    fill: #333;
+}
+
+
+.block h2 a {
+    color: inherit;
+}
+
+.block h3 {
+    margin: 20px 0;
+    display: inline-block;
+    background-color: #333;
+    padding-left: 40px;
+    padding-right: 3px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.22;
+    font-family: "Zilla Slab", sans-serif;
+}
+.block p img {
+    display: block;
+    margin: 10px auto;
+}
+
+

@@ -20,7 +20,7 @@
     height: 100%;
     display: block;
     margin: 0 auto;
-    min-width: 1000px;
+    min-width: 1200px;
 }
 
 .logo-container {
@@ -41,17 +41,18 @@
 }
 
 .navigation li {
-    height: 70%;
+    height: 45px;
     display: table;
     float: left;
     padding: 0 20px;
-    margin: 8px 40px;
+    margin: 12px 40px;
+    color: black;
 }
 
 .navigation li a {
     display: table-cell;
     vertical-align: middle;
-    color: black;
+    color: inherit;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
 
@@ -65,6 +66,11 @@
     color: white;
 }
 
+.navigation li:hover{
+    background-color: black;
+    color:white;
+}
+
 .form-container {
     height: 100%;
     display: table;
@@ -75,4 +81,24 @@
 .form-inline {
     display: table-cell;
     vertical-align: middle;
+    width: 300px;
+}
+#input-search {
+    padding:14.5px 16px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+.btn {
+    position:relative;
+    padding:12.5px 15px;
+    left:-8px;
+    color: #494949;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    border:2px solid black;
+}
+.btn:hover  {
+    background-color: black;
+    color:white;
 }

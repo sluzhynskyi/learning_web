@@ -10,9 +10,9 @@
   <a title="Demo" href="link_on_demo"><strong>Demo</strong></a>
 </p>
 
-![](https://img.shields.io/github/languages/code-size/sluzhynskyi/learning_web)
-![](https://img.shields.io/github/last-commit/sluzhynskyi/learning_web/master)
-![](https://img.shields.io/github/languages/count/sluzhynskyi/learning_web)
+![](https://img.shields.io/github/languages/code-size/sluzhynskyi/web_docs)
+![](https://img.shields.io/github/last-commit/sluzhynskyi/web_docs/master)
+![](https://img.shields.io/github/languages/count/sluzhynskyi/web_docs)
 ![](https://img.shields.io/github/followers/sluzhynskyi?style=social)
 
 # HTML and CSS Learning

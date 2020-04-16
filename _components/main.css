@@ -10,18 +10,23 @@ body {
     font-family: 'Roboto Light', sans-serif;
     min-width: 1300px;
 }
+
 h3 {
     font-size: 25px;
 }
+
 h4 {
     font-weight: 500;
 }
+
 a {
     color: dimgrey;
 }
-a:hover{
-    color:black;
+
+a:hover {
+    color: black;
 }
+
 .bg-white {
     background-color: white;
 }
@@ -69,16 +74,16 @@ a:hover{
     display: table-cell;
     vertical-align: middle;
     color: inherit;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: normal;
 
 }
 
-.CSS_page #css_page, .HTML_page #html_page {
+.CSS_page #css_page, .HTML_page #html_page, .Home_page #home_page {
     background-color: black;
 }
 
-.CSS_page #css_page a, .HTML_page #html_page a {
+.CSS_page #css_page a, .HTML_page #html_page a, .Home_page #home_page a {
     color: white;
 }
 
@@ -104,6 +109,7 @@ a:hover{
     background: rgba(50, 50, 50, 0.2);
     border: 0 solid #dbdbdb;
     width: 250px;
+    font-family: Raleway, sans-serif;
 }
 
 .btn {
@@ -115,11 +121,13 @@ a:hover{
     text-decoration: none;
     background: #ffffff;
     border: 2px solid black;
+    font-family: Raleway, sans-serif;
 }
 
 .btn:hover {
     background-color: black;
     color: white;
+    font-family: Raleway, sans-serif;
 }
 
 
@@ -135,7 +143,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin-bottom: 10px;
     background-color: #eee;
     border-bottom: solid 1px #dce3e5;
     border-top: solid 1px #dce3e5;
@@ -164,6 +172,7 @@ div.block {
     color: #464646;
     margin: 3px 0;
 }
+
 .block h2 :hover {
     color: #333;
 }
@@ -173,7 +182,7 @@ h2 svg {
 }
 
 
-.block h2 a{
+.block h2 a {
     color: inherit;
 }
 
@@ -188,6 +197,7 @@ h2 svg {
     line-height: 1.22;
     font-family: "Zilla Slab", sans-serif;
 }
+
 .block p img {
     display: block;
     margin: 10px auto;

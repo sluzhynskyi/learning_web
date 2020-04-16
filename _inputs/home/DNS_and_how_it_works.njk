@@ -1,10 +1,10 @@
-{% set body_class = "home" %}
+{% set body_class = "Home_page" %}
 {% set Title = "Web docs" %}
 {% set Title_h1 = "DNS and how it works" %}
-{% extends "../_includes/base.njk" %}
+{% extends "../../_includes/base.njk" %}
 {% block Css_links %}
-    <link rel="stylesheet" href="../_components/main.css" type="text/css">
-    <link rel="stylesheet" href="../_components/next_steps.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/main.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/next_steps.css" type="text/css">
 {% endblock %}
 {% block Content %}
     <div class="block">
@@ -181,6 +181,6 @@ NOT FOUND
         <p><img alt="Explanation of the steps needed to obtain the result to a DNS request"
                 src="https://mdn.mozillademos.org/files/8961/2014-10-dns-request2.png"
                 style="height: 702px; width: 544px;"></p>
-        {% include "../_includes/next_steps.njk" %}
+        {% include "../../_includes/next_steps.njk" %}
     </div>
 {% endblock %}

@@ -1,11 +1,11 @@
+{% set body_class = "Home_page" %}
 {% block Css_links %}
-    <link rel="stylesheet" href="../_components/main.css" type="text/css">
-    <link rel="stylesheet" href="../_components/next_steps.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/main.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/next_steps.css" type="text/css">
 {% endblock %}
-{% set body_class = "home" %}
 {% set Title = "Web docs" %}
 {% set Title_h1 = "What is HTTP?" %}
-{% extends "../_includes/base.njk" %}
+{% extends "../../_includes/base.njk" %}
 {% block Content %}
     <div class="block">
         <span class="seoSummary"><strong>HTTP</strong> is</span> a <a class="glossaryLink"
@@ -333,6 +333,6 @@ Content-Type: text/html
 
         <p>HTTP is an extensible protocol that is easy to use. The client-server structure, combined with the ability to
             simply add headers, allows HTTP to advance along with the extended capabilities of the Web.</p>
-    {% include "../_includes/next_steps.njk" %}
+    {% include "../../_includes/next_steps.njk" %}
     </div>
 {% endblock %}

@@ -1,11 +1,11 @@
+{% set body_class = "Home_page" %}
 {% block Css_links %}
-    <link rel="stylesheet" href="../_components/main.css" type="text/css">
-    <link rel="stylesheet" href="../_components/next_steps.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/main.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/next_steps.css" type="text/css">
 {% endblock %}
-{% set body_class = "home" %}
 {% set Title = "Web docs" %}
 {% set Title_h1 = "How does internet works?" %}
-{% extends "../_includes/base.njk" %}
+{% extends "../../_includes/base.njk" %}
 {% block Content %}
     <div class="block">
         <h3>A simple network</h3>
@@ -94,7 +94,7 @@
             the infrastructure. It is worth noting there are several other services built on top of the Internet, such
             as email and <a href="/en-US/docs/Glossary/IRC">IRC</a>.</p>
 
-       {% include "../_includes/next_steps.njk" %}
+       {% include "../../_includes/next_steps.njk" %}
 
     </div>
 {% endblock %}

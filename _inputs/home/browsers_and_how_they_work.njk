@@ -1,10 +1,10 @@
-{% set body_class = "home" %}
+{% set body_class = "Home_page" %}
 {% set Title = "Web docs" %}
 {% set Title_h1 = "Browsers and how they work" %}
-{% extends "../_includes/base.njk" %}
+{% extends "../../_includes/base.njk" %}
 {% block Css_links %}
-    <link rel="stylesheet" href="../_components/main.css" type="text/css">
-    <link rel="stylesheet" href="../_components/next_steps.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/main.css" type="text/css">
+    <link rel="stylesheet" href="../../_components/next_steps.css" type="text/css">
 {% endblock %}
 {% block Content %}
     <div class="block">
@@ -372,6 +372,6 @@
         <p>In this example, the DOM content load process took over 1.5 seconds, and the main thread was fully occupied
             that entire time, unresponsive to click events or screen taps.</p>
 
-        {% include "../_includes/next_steps.njk" %}
+        {% include "../../_includes/next_steps.njk" %}
     </div>
 {% endblock %}

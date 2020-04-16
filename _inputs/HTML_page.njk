@@ -1,9 +1,12 @@
-{% set CSS_dir = "../_components/main.css" %}
 {% set body_class = "HTML_page" %}
 {% set Title = "HTML docs" %}
 {% set HeaderContent = "Page about HTML" %}
 {% set Title_h1 = "Short Web Documentation" %}
 {% extends "../_includes/base.njk" %}
+{% block Css_links %}
+    <link rel="stylesheet" href="../_components/main.css" type="text/css">
+    <link rel="stylesheet" href="../_components/next_steps.css" type="text/css">
+{% endblock %}
 {% block Options %}
     <option value="<html>">fdsafsda</option>.
     <option value="<header>"></option>

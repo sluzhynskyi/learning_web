@@ -1,12 +1,16 @@
-{% set CSS_dir = "../_components/main.css" %}
 {% set body_class = "CSS_page" %}
 {% set Title = "CSS docs" %}
 {% set HeaderContent = "Page about CSS" %}
 {% set Title_h1 = "Short Web Documentation" %}
 {% extends "../_includes/base.njk" %}
 
+{% block Css_links%}
+    <link rel="stylesheet" href="../_components/main.css" type="text/css">
+    <link rel="stylesheet" href="../_components/next_steps.css" type="text/css">
+{% endblock %}
+
 {% block Options %}
-    <option value="color"></option>.
+    <option value="color"></option>
     <option value="background-color"></option>
     <option value="font-size"></option>
     <option value="width"></option>

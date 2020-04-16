@@ -1,8 +1,10 @@
-{% set CSS_dir = "./_components/main.css" %}
 {% set body_class = "home" %}
 {% set Title = "Web docs" %}
 {% set Title_h1 = "Short Web Documentation" %}
 {% extends "../_includes/base.njk" %}
+{% block Css_links %}
+    <link rel="stylesheet" href="./_components/main.css" type="text/css">
+{% endblock %}
 {% block Content %}
     <div class="block">
         <h2>
@@ -28,9 +30,9 @@
             </svg>
             <a href="/what_is_HTTP"> What is HTTP? </a>
         </h2>
-        <p><strong><dfn>Hypertext Transfer Protocol (HTTP)</dfn></strong> is an <a class="external"
-                                                                                   href="https://en.wikipedia.org/wiki/Application_Layer"
-                                                                                   rel="noopener">application-layer</a>
+        <p><strong>Hypertext Transfer Protocol (HTTP)</strong> is an <a class="external"
+                                                                        href="https://en.wikipedia.org/wiki/Application_Layer"
+                                                                        rel="noopener">application-layer</a>
             protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web
             browsers and web servers, but it can also be used for other purposes. HTTP follows a classical <a
                     class="external" href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" rel="noopener">client-server
@@ -49,70 +51,57 @@
                  aria-hidden="true">
                 <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"></path>
             </svg>
-            Browsers and how they work
+            <a href="/browsers_and_how_they_work">Browsers and how they work</a>
         </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eius eveniet incidunt molestiae nesciunt
-            quisquam tempore totam voluptatum. Accusamus ad architecto aspernatur eaque enim, et laborum, magnam nam
-            natus,
-            nemo perferendis quasi rerum ullam. Ex inventore magni perspiciatis placeat saepe vel voluptate
-            voluptatibus.
-            Amet atque dignissimos dolore doloremque eum possimus ratione repudiandae. Ab adipisci alias aliquam dicta
-            enim
-            exercitationem explicabo id molestiae mollitia natus nisi optio quas quia quod sed sint, totam veniam?
-            Consequatur, distinctio eaque enim ipsam obcaecati quisquam soluta? Architecto culpa delectus doloremque
-            esse
-            facere fugit, in ipsa iusto labore laborum non, odio porro quam quas, quos repellendus.</p></div>
+        <p>A browser is a software application used to locate, retrieve and display content on the World Wide Web,
+            including Web pages, images, video and other files. As a client/server model, the browser is the client run
+            on a computer that contacts the Web server and requests information. The Web server sends the information
+            back to the Web browser which displays the results on the computer or other Internet-enabled device that
+            supports a browser. <br>
+
+            Today’s browsers are fully-functional software suites that can interpret and display HTML Web pages,
+            applications, JavaScript, AJAX and other content hosted on Web servers. Many browsers offer plug-ins which
+            extend the capabilities of the software so it can display multimedia information (including sound and
+            video), or the browser can be used to perform tasks such as videoconferencing, to design web pages or add
+            anti-phishing filters and other security features to the browser.<br>
+
+            A browser is a group of structured codes which together performs a series of tasks to display a web page on
+            the screen. According to the tasks they perform, these codes are made as different components.</p></div>
     <div class="block">
         <h2>
             <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 26 28"
                  aria-hidden="true">
                 <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"></path>
             </svg>
-            DNS and how it works
+            <a href="/DNS_and_how_it_works">DNS and how it works</a>
         </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis commodi cupiditate enim eos
-            error
-            est ipsum, neque officia omnis pariatur possimus, recusandae. Aliquam amet, asperiores consequuntur
-            cupiditate
-            debitis dicta dolor ex explicabo fugit harum id minima nisi numquam provident quisquam suscipit voluptates?
-            Dolorem dolores eveniet exercitationem itaque molestias nemo officia quas rem veniam! Ab assumenda, aut
-            autem
-            dolor dolore dolorum esse est inventore magnam maxime modi neque nobis optio praesentium provident quasi
-            totam
-            ullam! Aliquam, aliquid atque cupiditate deleniti distinctio dolores est et itaque magni natus nihil odio
-            officia, pariatur possimus provident quo suscipit temporibus vitae voluptas voluptatem. A aspernatur at
-            autem
-            dolorem dolores est et eum hic in ipsa laboriosam laudantium placeat possimus, quae quo suscipit totam?
-            Alias
-            cupiditate, delectus excepturi illum labore repellendus reprehenderit. Ab accusantium, adipisci asperiores
-            assumenda aut beatae commodi cum delectus dicta distinctio, dolor dolorem eius eligendi eum, excepturi id
-            illo
-            iure laborum minus molestias mollitia nesciunt nisi nostrum omnis optio perferendis quae quidem reiciendis
-            sint
-            vel velit veritatis voluptas voluptatem. Cupiditate delectus deleniti eius, itaque iusto non quas. Accusamus
-            aut
-            consequatur dolore esse est maxime modi pariatur soluta! A debitis exercitationem iure laboriosam maxime
-            mollitia numquam odio quia quo, voluptatem. Ex odio, sit?</p></div>
+        <p><strong>DNS (Domain Name System)</strong> is a hierarchical and decentralized naming system for Internet
+            connected resources. DNS maintains a list of <a class="glossaryLink"
+                                                            href="https://en.wikipedia.org/wiki/Domain_name"
+                                                            title="domain names: A domain name is a website's address on the Internet. Domain names are used in URLs to identify to which server belong a specific webpage. The domain name consists of a hierarchial sequence of names (labels) separated by periods (dots) and ending with an extension.">domain
+                names</a> along with the resources, such as IP addresses, that are associated with them.</p>
+        <p>The most prominent function of DNS is the translation of human-friendly domain names (such as mozilla.org) to
+            a numeric <a class="glossaryLink" href="https://en.wikipedia.org/wiki/IP_address"
+                         title="IP address: An IP address is a number assigned to every device connected to a network that uses the Internet protocol.">IP
+                address</a> (such as 151.106.5.172); this process of mapping a domain name to the appropriate IP address
+            is known as a <strong>DNS lookup</strong>. By contrast, a <strong>reverse DNS lookup</strong> (rDNS) is used
+            to determine the domain name associated with an IP address.</p>
+
+    </div>
     <div class="block">
         <h2>
             <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 26 28"
                  aria-hidden="true">
                 <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"></path>
             </svg>
-            What is hosting?
+            <a href="/Pages_sites_servers_and_search_engines">What is the difference between webpage, website, web
+                server, and search engine?</a>
         </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium, animi corporis cum
-            doloremque
-            exercitationem facere fuga, fugiat harum iste libero, mollitia odio perferendis quo sunt suscipit vero.
-            Adipisci
-            aspernatur aut autem culpa cum delectus doloremque eaque earum eius esse exercitationem fugit hic impedit
-            iste
-            iure laborum laudantium molestias, necessitatibus non nulla odit omnis pariatur perferendis placeat
-            provident
-            quae quidem quisquam quos reiciendis sapiente, sed sequi sit suscipit totam veritatis voluptas voluptates.
-            Animi
-            consectetur consequuntur delectus facilis, hic magni officia omnis sint unde. Aliquam cum eaque ipsam
-            maiores
-            molestiae obcaecati pariatur qui, quis, quisquam ratione soluta temporibus tenetur totam. Quod!</p></div>
+        <p>As with any area of knowledge, the web comes with a lot of jargon. Don't worry, we won't overwhelm you with
+            all of it (we have a glossary if you're curious). However, there are a few basic terms you need to
+            understand at the outset, since you'll hear these expressions all the time as you read on. It's easy to
+            confuse these terms sometimes since they refer to related but different functionalities. In fact, you'll
+            sometimes see these terms misused in news reports and elsewhere, so getting them mixed up is
+            understandable!</p></div>
 {% endblock %}
 

@@ -9,7 +9,7 @@ module.exports = eleventyConfig => {
         dir: {
             input: '_inputs',
             includes: "_includes",
-            output: "docs"
-        }
+            output: "docs",
+        }, pathPrefix: "/web_docs/"
     };
 };

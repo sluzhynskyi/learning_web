@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="link_on_demo">HTML and CSS Learning</a>
+  <a href="https://sluzhynskyi.github.io/web_docs/">HTML and CSS Learning</a>
 </h1>
 
 <p align="center">
@@ -7,7 +7,7 @@
   &#x2022;
   <a title="Documentation" href="#documentation"><strong>Documentation</strong></a>
   &#x2022;
-  <a title="Demo" href="link_on_demo"><strong>Demo</strong></a>
+  <a title="Demo" href="https://sluzhynskyi.github.io/web_docs/"><strong>Demo</strong></a>
 </p>
 
 ![](https://img.shields.io/github/languages/code-size/sluzhynskyi/web_docs)

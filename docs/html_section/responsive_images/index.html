@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widthitial-scale=1, shrink-to-fit=no">
+    <title> HTML docs </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Raleway&family=Roboto&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    
+    <link rel="stylesheet" href="/web_docs/components/main.css">
+    <link rel="stylesheet" href="/web_docs/components/next_steps.css">
+    <link rel="stylesheet" href="/web_docs/components/html_section.css">
+
+</head>
+<body class="HTML_page learn_the_basics">
+<nav class="navbar bg-white">
+    <div class="nav-inner">
+        <div class="logo-container">
+            <a href="/web_docs/" class="logo" aria-label="Web Docs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.629" height="59.677" viewBox="0 0 1463 458">
+  <image x="1" width="1461" height="458" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAA8CAYAAADYDABOAAARr0lEQVR4nO1dCbQUxRW9fwH57AIiix9ZRRYXgmIkBEXEQFREIQKKIrhFooRFRYxoUFGiEoISFE3iBmoUFVlckBBFQNxAwyJfQFBEEASMLB/4yORUct/JO2V3T89Md//50PecOjNTW9dUv3r16tWrVzkA5gM4GUAxgkFVAOUAbAuoviBQAGAhgG4AGgN4DID57/uyqI0xokE1AJ/lA2gEoApDUNgAoDDLXmRDftYEcFYptyVG6aJ5LoBvA27CYHLUbMN2tmdPTHSHPTbmc8oPCisBrALwTBb3bJD/N0bZRE5uwM2+C8DFAGrFBBEjmxEk4c8BsA7AVfEbj5HtCJLw/wbgxviNxygLyA+ojTMoO/eK33pgmM9QEUAJgDoA+gHIi7AN3wF4gmrffDJK8/00AJ0ibEco+BhAIoOwBEArfmZST9hhITuvdZa3U8KF1suuxr2WKNvwiQvBXVJG+tAtLMuU4+8GcC6ATdwEixEcrgdwBoC3AbxMhUHQyohkMHsxYwEc5Mbk4wA+AnBkWX/PmRL+HhI92CGnBNCmGP/DWQzHkvBLA4bAR6jnruF7LvMq4Uw5yHsAfsLvLwTQnhg/hmwwZgOx/TsL2hAIMiH8LwA8CWAugO4A7gOwyEe5D7lgepmLpxjeSMT9EzwyIfw/AejM6VC4/qgkZZYBOBXAAAAXAWjBRXGMGJEiXcI3mqBv1GZVZ37O89AEgFaSGsZ+5qjD9JWnw8ntMgcDaosTShzi0nne3gxnrXT/4w9eiekubs1m1eWqfAcAbQAsBXANZX8bZqD8wYprX4pWnKZDR3JxXpNx+yh+tadWReNBY84KYIKlS38JwIu0bi3gSzZy+fEAbrH62LyMh5l/DetpzdlvYJL2GkI8gt+NduVpAKv5TDNz9qaaMROsoBj6DoCvAFRiX5h+Oo7m5n6wiGLwYr73Cix/PoCr+dsLhiH+GcAbtPTNI510BHAZ63LCLPatEad3sP3HU/PYnXshkIGYqh7fGKANcokXvOCQ/oBLY88mQYStu7X1+Hs9Or6RVXazSptjpfV2qcMQ5C6VbyvFPDf0cGn3o8zfgb+9NgnNADqQZv+8lIQRLuI6zuA3HvXc5lEH2P+rPcob5nmMR/nyAF5xKHd7kufWVO/ODPCUCH8jdw+XOaQZDtqMD6kHYKeV7rTwzWNHHSwFwjfPfBPAUwAqM+0Gcoz5Vtn7VZt7W2mf8EWMZHp9AFOof5cBvYOcByT+WRxMRkHwVwA1mPYrD8LvCuDX/H49uek6/oe+qn3d0+ibpap8Qz7TWNl+TiYm7/U09Xynegapesz3BQC+JKE9omb3o1yIf5kSh7sAmMmZsQjANCVS25uQM9Vzh3Dd+A3716S1ZdoVzF+UKuE/Tc7ulv6hakBrnsLS6T0twn86AoJ3I3wd+jNtoEvZpqrNeSQ4O89Ypg9zSBvAtBYu9ReRk4GDxonwRbx61aWO36o2zk6hX8zgbMlyJ1LUc8p3tqp/sEP6myp9gksdRoRpwjynOKQ3Z9ovXMrrE3NbVHxXxl3mUm4O09vx95pUCd8mZKcwXjWuDR+yn/n6qbQLIyT6ZIT/HNPKWx2aIGcFOYkQ8HCHOlow7TUrfovSwU/zaJ8oCuyXLoRvcJNHeTOD1Wa+vin0y+uq/vc88hlzieoehP9Lpv00yfNmqee9q+LnqfhVHuXrOpRtx7gbXMq8z53ni9IlfL9By1tVOM23tBY1o7iAWheRDYoX4W9XU+yzVlofxm8T2ZCi0W6VZwPjC7ibrcs/y7TqSdonu7OF5Gw24R/B/vKqQxbkLVJYN4l44seG6WIXAtum+m+qj3pE5LldxcmM1SZJWUOv/7BE6aEsW4GzzXaHcl8rOsvYVscNo9nxY9nAVQ757qLsnMcX9UFIbfGDIzmVz+SULcS+l7NBY8rhNSifbiX3vpz5RIt1iYPK9lP1/Spy5v0qLofM4SP+3sFBVd6qpwHXD15ow7RNXFhX9fHfl/Ozg4+8wvETVvwq5azgJB/1tCOzKFJxK/l5QpKyTvXfxplkNQeQWW/9nP1xMt9tXZU/ERbhG9xNeXSpRx7RrJi1wQUA7lXyZtToRsKfq547nZ9DVNyl3Lx7TBH+W/y01zBQZ3y/40I2GZq5HPzPJTPxMkuuyM+SZHpsBTFD8DNI3Orczc9yqg1eEGXCDpVnZwrtsFGDKti7OQDWUxX6BvOZ510JYAxVnKES/nZOzX4xg4uyvpzWDWf9GUdrMr1vEDiXdYgWwpha38O4K1T9V5HwF1BMa6QGSGeHdgihHsd8+S6q1Fxy0louasUcH/Y6QkjVfBIgVJ0HfOS1Ob1A9PsHfB7m38XP6ipO/nO6bm6OBvAQ300RZ7LlZGTvUgR6n9rF/z43DBk/oVbSyZCXhLCbcjH5MjeG9DN2cTH9El96ujK+hNOZZ6riYl0d8p3JtAcVMXRxqXOcesnp9KPI+HXJyb3yirqzQwr1y2C9yEdeWUTai9u16n296KOeRsw7QsX1YFznJGVX8p2vTOE/3qfat0QGV1iEr7URXmjFkTnGksPc0J4LxldJxAKnvYVUCf8h5rlaLZic1IfC4TtS/Wgw2aXOBaqNs5K0sQ9nlO9V3F9U+YVJytdjvptTeE83sUw1pX1zCu+odjhpdUREvSDJ8/R+jt4MHM24Sh4q1QQ3z0ALAYl7ge/La/F/LMtNEXOMsAhf65W9MF6V2cLOWMxF5jgSYU8SvNMBiCtJXMna44fwN1NEEPGkoY+OzGWZzR55ZcHW0tLY6DBO/SetsXhIxTdSti92GK7yee2M2mGFKue2j/GZZa7wO4c8k1W60859gm1vxTwnW2lrfbTjW7X+maviOzJuucd7FbHqvTA5fonSMCRDMi6mQzE1Fk/yj1RzUB9mQvgJLnIFozzy3arydUpS5z9V3tPJ9WQAbKP8KXjc5TlCMI3IfUXs2UxCFLjtqnqFwap8P+54ynsUvfsxaq+hP3d111smElrjMlGpFfexzW1VutNRVc0sh/NdS9oStfs9QMXvUwzxfmuv6QC1hVKuFuO/Covwi/myRyI53kjzGbvIJR8OmPA1ERZ55Fup8o3x8fxnrQVnTapJNUY7lBN3h3dQASCopUwJNNGm05eGQM6z6mqqTClq0QRgmMPb3Kjq2WwxjhzWU1PFycB1a4ttrNfUst0539qjKHZQxTbnjFJHxTXjIEhQLA5N1En4PJU1I8NnuE396RL+19yF9OL2EoZz8bvWZxvWkKtpgq1B+x/bPkjCSBL/TP5+lwtR2S/I59lce+MtnTCZz5I9hKrc4BLRazz/b3cSW3eXzaJnuNgXpUUOz2yMsdYvbuEVDsRKqp/a0d7HbeA+z4HfQJXJ5SwzzpIM/hU24X/hw5S1E1WIUsZ8/32S7f10QjZ5WSghB91kWXCmEr7nlL01hPZtJSf3K0a6he1kJLY2zm/YwfJ+TGV0325l37qVC53jm3CnD67fmNqTkZZu101TUtYJPw6lGyIh/H0ZnLIqZ9nExIQfhyDCsij8tJRXW/teyHNQV3ZSp45ixAgMYZosaDT3kac2N1PqUyO0kjtuUbrMi3GYICrC92Nrs4mr79nK/DUM2NaTMQ4/NI6K8G0TWzds5EGGT9XVPUFjA80p8pKcu41xaKIKN99CX9wmqHt2In43C8KGlorzj9TTBrG4jREjMlGnkGrKLVZ8PncDZ9K+RLCeGyStuTkxjzbV87mb2oaaotrcbIpvYImREnLI8f2cmskE6+ldwOmiudk0QOvH7+lgAW33vbCIedrQHmZ/Coc1Yhw6MFLGx1Fx/BIXj1i3q0PKxhjq7zS4WuuQ1+BabqkfQfl8HeNruOR3Qt0IBnqM7EaVqAi/2DpnCsr8N1hxvWnkdC8tMDcpD1x9AnJDvstHnhiHNr6OkuPbR9sGuMjmVUn4I7gmaBDw0cPSdLctp/z9Hgv0i33s30rBVJcREvyfOVmsOg78uk83OHF8J6ekGtXJ7aM4bxskNtBd4igeYZQzpAkeWTyaIluQGERxr0sWzGibaHtV6MOtnx+sTOKwIG1Eoc58zaFxzSO2OxF15hkhPkPOdlbmTFWFO9Fiej2TBFEr4OcupDsN0Oozyn61QzE95IEKjUzrO4FicaD9FRXH3+gQZ6s2yzpe5FnXgcovZhFntlv4386jPXvQs1h7nooSTw2liQrU0LVNYePSC0N8WvimhNK01dlBLY6bt+GyBjl0rn3n1KXng8UqbntI/b5JXdKWDdjj4h8oVSRzn54WoiL8DhQDbrbi+/C0zYRD4IIIOV63Qp2PBU9paV8zOarfp/DAzUnMV5WHqMdTTr6AfoW20I5JnMvm8jheCeX75iT6+nQQdQc3+5qw3+tT/JjLNcZ63nHwFY87FnJP40TupRzLWWo28+Xz5Nj56n8k6MFsEdM7cjOykvqfIlHMpLgrZiI96VSgHNsiauprKCbupLuR5TRfOZeepANFFDK+hEkuTv0L6TcnTB+aIuN3DKn+Ih5+Bz1DzHBxk9GL50gTXPyKH8mljJtHx7HgC5d+AxevvS2PCnIueCLPmLblMwaT+OpwMExXZS7nYFxN2yjQn83z6sxsPe6xDFb+dMST834ys3Jsi7hi0a5FWqpD+No9ZH96nuvC36eqY5f6Mo45NFVBEm8XadNClISfYIffA2cc43DxQtCEf2aI/201OZPItjkOlyj0sl7kh+SMi618hSTCBD0tNFBpsmZ6QsWJew/t0PUzxk3kb9kZ18+ZQrlcx1W0npfgABI35+tZjz7n+6h1yKcZZ4gEOXgF5YBLQjnrPyQ4e0xXvwezrjJP+BLeVxcNaKwI6XlC+Mk8dQURSsjVxOfmmeryi17WjSszSPgfWM+tpy55+IZErIn5Oiv/3SQae9Y80nIwZX73Ur9rWW7Ft7oQZH81GPZwYB5FMfVNngHWrkZOpwg2mWLbrQ79OpCzpPy+Tl2npPO0CpoWor4pW+NUcrmxKq69ujggLPjxEZkpxPPBeLo/eYs3pMBhA+0Hl/g8ZeZRW3G94+mxYJKV/6CDqbV81xtJhoNO4/fVtJ/St1X+QMK37Zj2Km1UAQdgVw647myXvhyiGr1KTKAZcA/8GKMohsn9BFNJ/BqJ4F7L/1GahC8YQTudAg6E5pT/5mdB21LBLBe3ieLlSwz0ci0iLybR1rTK7XJQB4rLDnEp/p1yQ17gQKyi/9aeLsQF33PUqp2iLrWAJfbYyLXyPcXZ6BOuLbopK1uzkXcOZ/BhXCessepryPf9CF2N5zv47skPY7c9GwgfXMQ9QAL4gtqHsnZIZIKL20SxRzqDn+UsohIvX/pmkklU92ofMSOpQdEWrkOVL/9KfJ9anZnLoM8tG/GkL9s1ia5cNCqT0Gy3MOUVvayjw6YdzNtMcWp9E7sMxHFc+3S0XIODvnbe5g05l7jcARAKnZaWjG8HfUnA9BDqD3vndgTrb0hi7KWsRuV6oKHqP15IrphQasJLqRk5h2pH0O31VH6vQ47Yg/kMbiT3Fp/zp5GzrlTenytTrJB1xpeMr2b9h9dJ0GDbH6EGRw/oYeranuP4WwbfENaj3ao/QWKX46S5vFtAP1dug/xExe20+qubWudkTAtR6fH9oAmn64PqpZYl3EnV4DTOWgdJ0MOV09gCEkdlckaR4eXWxFnM+yS9fT3O9KOVHL6VG2P7WWYo3TBeSm75udKhN6EcvsXaLS7kIOpm9W8+1ZA9qTkS+qjK5xRQNDuJvmnu4SAo4L20g/ifqrBtxZw5iqmxG02NkO1AoANN0U9UcTnULg3hbLY5aM6fLRxftBW3hFR/FLY6ZSUsJDF7+QaNMjTi1VBRPbNUtTo25lFMGBPycxIh15/tMHL3reT6bjeER4mJXDMMiPCZidwsOq96LTsgrMEoWpPD2b3I51xbLKEu/sFSbs9ouvau43HzfRiol8/proq6fKu0UJFEuS2E51dVarbdXGyV+DgTcKhhJy1EjZ97kb+NU1Z7FjTxZkPKpNnq1yBhmJERbc0i26x5jCMx8+wwDwtVBbDkP6UV8z0IG2/cAAAAAElFTkSuQmCC"/>
+</svg>
+</a>
+            
+        </div>
+        <div class="form-container">
+            <form class="form-inline" action="javascript:;" onsubmit="scrollToInput()">
+                <input id="input-search" type="search" placeholder="Search"
+                       list="listOfContent"
+                       autocomplete="off" aria-label="Search">
+                <datalist id="listOfContent">
+                    
+    <option value="<html>"></option>.
+    <option value="<header>"></option>
+    <option value="<body>"></option>
+    <option value="<img>"></option>
+    <option value="<a>"></option>
+    <option value="<b>"></option>
+    <option value="<i>"></option>
+
+                </datalist>
+                <button class="btn" type="submit">Search
+                </button>
+            </form>
+        </div>
+        <ul class="navigation">
+            <li id="home_page"><a href="/web_docs/">Home</a></li>
+            <li id="html_page"><a href="/web_docs/html_section/">HTML docs</a></li>
+            <li id="css_page"><a href="/web_docs/css_section/">CSS docs</a></li>
+        </ul>
+
+    </div>
+</nav>
+<div class="titlebar-container">
+    <div class="titlebar"><h1 class="title">Learn the basic of HTML</h1></div>
+</div>
+<div class="main">
+    
+    <div class="block">
+
+        <h2 id="Why_responsive_images">Why responsive images?</h2>
+
+        <p>Let's examine a typical scenario. A typical website may contain a header image and some content images below
+            the header. The header image will likely span the whole of the width of the header, and the content image
+            will fit somewhere inside the content column. Here's a simple example:</p>
+
+        <p>
+            <img alt="Our example site as viewed on a wide screen - here the first image works ok, as it is big enough to see the detail in the center."
+                 src="https://mdn.mozillademos.org/files/12940/picture-element-wide.png"
+                 style="display: block; height: 554px; margin: 0px auto; width: 700px;"></p>
+
+        <p>This works well on a wide screen device, such as a laptop or desktop (you can <a class="external"
+                                                                                            href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/not-responsive.html"
+                                                                                            rel="noopener">see the
+                example live</a> and find the <a class="external"
+                                                 href="https://github.com/mdn/learning-area/blob/master/html/multimedia-and-embedding/responsive-images/not-responsive.html"
+                                                 rel="noopener">source code</a> on Github.) We won't discuss the CSS
+            much in this lesson, except to say that:</p>
+
+        <ul>
+            <li>The body content has been set to a maximum width of 1200 pixels — in viewports above that width the body
+                remains at 1200px and centers itself in the available space. In viewports below that width, the body
+                will stay at 100% of the width of the viewport.
+            </li>
+            <li>The header image has been set so that its center always stays in the center of the header, no matter
+                what width the heading is set at. If the site is being viewed on a narrower screen, the important detail
+                in the center of the image (the people) can still be seen, and the excess is lost off either side. It is
+                200px high.
+            </li>
+            <li>The content images have been set so that if the body element becomes smaller than the image, the images
+                start to shrink so that they always stay inside the body, rather than overflowing it.
+            </li>
+        </ul>
+
+        <p>However, issues arise when you start to view the site on a narrow screen device. The header below looks ok,
+            but it's starting to take up a lot of the screen height for a mobile device. And at this size, it is
+            difficult to see the people within the first content image.</p>
+
+        <p>
+            <img alt="Our example site as viewed on a narrow screen; the first image has shrunk to the point where it is hard to make out the detail on it."
+                 src="https://mdn.mozillademos.org/files/12936/non-responsive-narrow.png"
+                 style="display: block; height: 793px; margin: 0px auto; width: 320px;"></p>
+
+        <p>An improvement would be to display a cropped version of the image which displays the important details of the
+            image when the site is viewed on a narrow screen. A second cropped image could be displayed for a medium
+            width screen device, like a tablet. This is commonly known as the <strong>art direction problem</strong>.
+        </p>
+
+        <p>In addition, there is no need to embed such large images on the page if it is being viewed on a mobile
+            screen. And conversely, a small <a href="/en-US/docs/Glossary/Raster_image">raster image</a> starts to look
+            grainy when displayed larger than its original size (a raster image is a set number of pixels wide and a set
+            number of pixels tall, as we saw when we looked at <a
+                    href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">vector
+                graphics</a>). This is called the <strong>resolution switching problem</strong>.</p>
+
+        <p>Conversely, it is unnecessary to display a large image on a screen significantly smaller than the size it was
+            meant for. Doing so can waste bandwidth; in particular, mobile users don't want to waste bandwidth by
+            downloading a large image intended for desktop, when a small image would do for their device. Ideally, you
+            would have multiple resolutions available and serve the appropriate size depending upon the device accessing
+            the data on the website.</p>
+
+        <p>To make things more complicated, some devices have high resolution screens that need larger images than you
+            might expect to display nicely. This is essentially the same problem, but in a slightly different
+            context.</p>
+
+        <p>You might think that vector images would solve these problems, and they do to a certain degree — they are
+            small in file size and scale well, and you should use them wherever possible. However, they aren't suitable
+            for all image types. Vector images are great for simple graphics, patterns, interface elements, etc., but it
+            starts to get very complex to create a vector-based image with the kind of detail that you'd find in say, a
+            photo. Raster image formats such as JPEGs are more suited to the kind of images we see in the above
+            example.</p>
+
+        <p>This kind of problem didn't exist when the web first existed, in the early to mid 90s — back then the only
+            devices in existence to browse the Web were desktops and laptops, so browser engineers and spec writers
+            didn't even think to implement solutions. <em>Responsive image technologies</em> were implemented recently
+            to solve the problems indicated above by letting you offer the browser several image files, either all
+            showing the same thing but containing different numbers of pixels (<em>resolution switching</em>), or
+            different images suitable for different space allocations (<em>art direction</em>).</p>
+
+        <div class="note">
+            <p><strong>Note</strong>: The new features discussed in this article — <code><a
+                            href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>/<code><a
+                            href="/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code>/<a
+                        href="/en-US/docs/Web/HTML/Element/picture"
+                        title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>
+                — are all supported in release versions of modern desktop and mobile browsers (including Microsoft's
+                Edge browser, although not Internet Explorer.) </p>
+        </div>
+
+        <h2 id="How_do_you_create_responsive_images">How do you create responsive images?</h2>
+
+        <p>In this section, we'll look at the two problems illustrated above and show how to solve them using HTML's
+            responsive image features. You should note that we will be focusing on the HTML <a
+                    href="/en-US/docs/Web/HTML/Element/img"
+                    title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>s
+            for this section, as seen in the content area of the example above — the image in the site header is only
+            for decoration, and therefore implemented using CSS background images. <a class="external"
+                                                                                      href="http://blog.cloudfour.com/responsive-images-101-part-8-css-images/"
+                                                                                      rel="noopener">CSS arguably has
+                better tools for responsive design</a> than HTML, and we'll talk about those in a future CSS module.</p>
+
+        <h3 id="Resolution_switching_Different_sizes">Resolution switching: Different sizes</h3>
+
+        <p>So, what is the problem that we want to solve with resolution switching? We want to display identical image
+            content, just larger or smaller depending on the device — this is the situation we have with the second
+            content image in our example. The standard <a href="/en-US/docs/Web/HTML/Element/img"
+                                                          title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element traditionally only lets you point the browser to a single source file:</p>
+
+        <pre class="brush: html">&lt;img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"&gt;</pre>
+
+        <p>We can however use two new attributes — <code><a
+                        href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code> and <code><a
+                        href="/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code> — to provide several
+            additional source images along with hints to help the browser pick the right one. You can see an example of
+            this in our <a class="external"
+                           href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html"
+                           rel="noopener">responsive.html</a> example on Github (see also <a class="external"
+                                                                                             href="https://github.com/mdn/learning-area/blob/master/html/multimedia-and-embedding/responsive-images/responsive.html"
+                                                                                             rel="noopener">the source
+                code</a>):</p>
+
+        <pre class="brush: html">&lt;img srcset="elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+     sizes="(max-width: 600px) 480px,
+            800px"
+     src="elva-fairy-800w.jpg"
+     alt="Elva dressed as a fairy"&gt;</pre>
+
+        <p>The <code>srcset</code> and <code>sizes</code> attributes look complicated, but they're not too hard to
+            understand if you format them as shown above, with a different part of the attribute value on each line.
+            Each value contains a comma-separated list, and each part of those lists is made up of three sub-parts.
+            Let's run through the contents of each now:</p>
+
+        <p><strong><code>srcset</code></strong> defines the set of images we will allow the browser to choose between,
+            and what size each image is. Each set of image information is separated from the previous one
+            by<strong> </strong>a comma. For each one, we write:</p>
+
+        <ol>
+            <li>An <strong>image filename</strong> (<code>elva-fairy-480w.jpg</code>)</li>
+            <li>A space</li>
+            <li>The image's <strong>intrinsic width in pixels</strong> (<code>480w</code>) — note that this uses the
+                <code>w</code> unit, not <code>px</code> as you might expect. This is the image's real size, which can
+                be found by inspecting the image file on your computer (for example, on a Mac you can select the image
+                in Finder and press <kbd>Cmd</kbd> + <kbd>I</kbd> to bring up the info screen).
+            </li>
+        </ol>
+
+        <p><strong><code>sizes</code></strong> defines a set of media conditions (e.g. screen widths) and indicates what
+            image size would be best to choose, when certain media conditions are true — these are the hints we talked
+            about earlier. In this case, before each comma we write:</p>
+
+        <ol>
+            <li>A <strong>media condition</strong> (<code>(max-width:600px)</code>) — you'll learn more about these in
+                the <a href="/en-US/docs/Learn/CSS">CSS topic</a>, but for now let's just say that a media condition
+                describes a possible state that the screen can be in. In this case, we are saying "when the viewport
+                width is 600 pixels or less".
+            </li>
+            <li>A space</li>
+            <li>The <strong>width of the slot</strong> the image will fill when the media condition is true
+                (<code>480px</code>)
+            </li>
+        </ol>
+
+        <div class="note">
+            <p><strong>Note</strong>: For the slot width, you may provide an absolute length (<code>px</code>,
+                <code>em</code>) or a length relative to the viewport (<code>vw</code>), but not percentages. You may
+                have noticed that the last slot width has no media condition (this is the default that is chosen when
+                none of the media conditions are true). The browser ignores everything after the first matching
+                condition, so be careful how you order the media conditions.</p>
+        </div>
+
+        <p>So, with these attributes in place, the browser will:</p>
+
+        <ol>
+            <li>Look at its device width</li>
+            <li>Work out which media condition in the <code>sizes</code> list is the first one to be true</li>
+            <li>Look at the slot size given to that media query</li>
+            <li>Load the image referenced in the <code>srcset</code> list that <strong>most closely</strong> matches the
+                chosen slot size
+            </li>
+        </ol>
+
+        <p>And that's it! At this point, if a supporting browser with a viewport width of 480px loads the page, the
+            <code>(max-width: 600px)</code> media condition will be true, and so the browser chooses the
+            <code>480px</code> slot. The <code>elva-fairy-480w.jpg</code> will be loaded, as its inherent width (<code>480w</code>)
+            is closest to the slot size. The 800px picture is 128KB on disk, whereas the 480px version is only 63KB — a
+            saving of 65KB. Now, imagine if this was a page that had many pictures on it. Using this technique could
+            save mobile users a lot of bandwidth.</p>
+
+        <div class="blockIndicator note">
+            <p><strong>Note</strong>: When testing this with a desktop browser, if the browser fails to load the
+                narrower images when you've got its window set to the narowest width, have a look at what the viewport
+                is (you can approximate it by going into the browser's JavaScript console and typing in <code><span
+                            class="message-body-wrapper"><span class="message-flex-body"><span
+                                    class="devtools-monospace message-body"><span
+                                        class="cm-variable">document</span>.<span
+                                        class="cm-property">querySelector</span>(<span class="cm-string">'html'</span>).<span
+                                        class="cm-property">clientWidth</span></span></span></span></code>). Different
+                browsers have minimum sizes that they'll let you reduce the window width to, and they might be wider
+                than you'd think. When testing it with a mobile browser, you can use tools like Firefox's <code>about:debugging</code>
+                page to inspect the page loaded on the mobile using the desktop developer tools.<br>
+                <br>
+                To see which images were loaded, you can use Firefox DevTools's <a
+                        href="/en-US/docs/Tools/Network_Monitor">Network Monitor</a> tab.</p>
+        </div>
+
+        <p>Older browsers that don't support these features will just ignore them. Instead, those browsers will go ahead
+            and load the image referenced in the <code><a
+                        href="/en-US/docs/Web/HTML/Element/img#attr-src">src</a></code> attribute as normal.</p>
+
+        <div class="note">
+            <p><strong>Note</strong>: In the <a href="/en-US/docs/Web/HTML/Element/head"
+                                                title="The HTML &lt;head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets."><code>&lt;head&gt;</code></a>
+                of the example linked above, you'll find the line <code>&lt;meta name="viewport"
+                    content="width=device-width"&gt;</code>: this forces mobile browsers to adopt their real viewport
+                width for loading web pages (some mobile browsers lie about their viewport width, and instead load pages
+                at a larger viewport width then shrink the loaded page down, which is not very helpful for responsive
+                images or design).</p>
+        </div>
+
+        <h3 id="Resolution_switching_Same_size_different_resolutions">Resolution switching: Same size, different
+            resolutions</h3>
+
+        <p>If you're supporting multiple display resolutions, but everyone sees your image at the same real-world size
+            on the screen, you can allow the browser to choose an appropriate resolution image by using
+            <code>srcset</code> with x-descriptors and without <code>sizes</code> — a somewhat easier syntax! You can
+            find an example of what this looks like in <a class="external"
+                                                          href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/srcset-resolutions.html"
+                                                          rel="noopener">srcset-resolutions.html</a> (see also <a
+                    class="external"
+                    href="https://github.com/mdn/learning-area/blob/master/html/multimedia-and-embedding/responsive-images/srcset-resolutions.html"
+                    rel="noopener">the source code</a>):</p>
+
+        <pre class="brush: html">&lt;img srcset="elva-fairy-320w.jpg,
+             elva-fairy-480w.jpg 1.5x,
+             elva-fairy-640w.jpg 2x"
+     src="elva-fairy-640w.jpg"
+     alt="Elva dressed as a fairy"&gt;
+</pre>
+
+        <p>
+            <img alt="A picture of a little girl dressed up as a fairy, with an old camera film effect applied to the image"
+                 src="https://mdn.mozillademos.org/files/12942/resolution-example.png"
+                 style="display: block; height: 425px; margin: 0px auto; width: 480px;">In this example, the following
+            CSS is applied to the image so that it will have a width of 320 pixels on the screen (also called CSS
+            pixels):</p>
+
+        <pre class="brush: css">img {
+  width: 320px;
+}</pre>
+
+        <p>In this case, <code>sizes</code> is not needed — the browser simply works out what resolution the display is
+            that it is being shown on, and serves the most appropriate image referenced in the <code>srcset</code>. So
+            if the device accessing the page has a standard/low resolution display, with one device pixel representing
+            each CSS pixel, the <code>elva-fairy-320w.jpg</code> image will be loaded (the 1x is implied, so you don't
+            need to include it.) If the device has a high resolution of two device pixels per CSS pixel or more, the
+            <code>elva-fairy-640w.jpg</code> image will be loaded. The 640px image is 93KB, whereas the 320px image is
+            only 39KB.</p>
+
+        <h3 id="Art_direction">Art direction</h3>
+
+        <p>To recap, the <strong>art direction problem</strong> involves wanting to change the image displayed to suit
+            different image display sizes. For example, a web page includes a large landscape shot with a person in the
+            middle when viewed on a desktop browser. When viewed on a mobile browser, that same image is shrunk down,
+            making the person in the image very small and hard to see. It would probably be better to show a smaller,
+            portrait image on mobile, which zooms in on the person. The <a href="/en-US/docs/Web/HTML/Element/picture"
+                                                                           title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>
+            element allows us to implement just this kind of solution.</p>
+
+        <p>Returning to our original <a class="external"
+                                        href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/not-responsive.html"
+                                        rel="noopener">not-responsive.html</a> example, we have an image that badly
+            needs art direction:</p>
+
+        <pre class="brush: html">&lt;img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva"&gt;</pre>
+
+        <p>Let's fix this, with <a href="/en-US/docs/Web/HTML/Element/picture"
+                                   title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>!
+            Like
+            <a href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content"><code>&lt;video&gt;</code>
+                and <code>&lt;audio&gt;</code></a>, the <code>&lt;picture&gt;</code> element is a wrapper containing
+            several <a href="/en-US/docs/Web/HTML/Element/source"
+                       title="The HTML &lt;source> element specifies multiple media resources for the &lt;picture>, the &lt;audio> element, or the &lt;video> element."><code>&lt;source&gt;</code></a>
+            elements that provide different sources for the browser to choose from, followed by the all-important <a
+                    href="/en-US/docs/Web/HTML/Element/img"
+                    title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element. The code in <a class="external"
+                                    href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html"
+                                    rel="noopener">responsive.html</a> looks like so:</p>
+
+        <pre class="brush: html">&lt;picture&gt;
+  &lt;source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg"&gt;
+  &lt;source media="(min-width: 800px)" srcset="elva-800w.jpg"&gt;
+  &lt;img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva"&gt;
+&lt;/picture&gt;
+</pre>
+
+        <ul>
+            <li>The <code>&lt;source&gt;</code> elements include a <code>media</code> attribute that contains a media
+                condition — as with the first <code>srcset</code> example, these conditions are tests that decide which
+                image is shown — the first one that returns true will be displayed. In this case, if the viewport width
+                is 799px wide or less, the first <code>&lt;source&gt;</code> element's image will be displayed. If the
+                viewport width is 800px or more, it'll be the second one.
+            </li>
+            <li>The <code>srcset</code> attributes contain the path to the image to display. Just as we saw with <code>&lt;img&gt;</code>
+                above, <code>&lt;source&gt;</code> can take a <code>srcset</code> attribute with multiple images
+                referenced, as well as a <code>sizes</code> attribute. So, you could offer multiple images via a <code>&lt;picture&gt;</code>
+                element, but then also offer multiple resolutions of each one. Realistically, you probably won't want to
+                do this kind of thing very often.
+            </li>
+            <li>In all cases, you must provide an <code>&lt;img&gt;</code> element, with <code>src</code> and
+                <code>alt</code>, right before <code>&lt;/picture&gt;</code>, otherwise no images will appear. This
+                provides a default case that will apply when none of the media conditions return true (you could
+                actually remove the second <code>&lt;source&gt;</code> element in this example), and a fallback for
+                browsers that don't support the <code>&lt;picture&gt;</code> element.
+            </li>
+        </ul>
+
+        <p>This code allows us to display a suitable image on both wide screen and narrow screen displays, as shown
+            below:</p>
+
+        <p>
+            <img alt="Our example site as viewed on a wide screen - here the first image works ok, as it is big enough to see the detail in the center."
+                 src="https://mdn.mozillademos.org/files/12940/picture-element-wide.png"
+                 style="display: block; height: 554px; margin: 0px auto; width: 700px;"><img
+                    alt="Our example site as viewed on a narrow screen with the picture element used to switch the first image to a portrait close up of the detail, making it a lot more useful on a narrow screen"
+                    src="https://mdn.mozillademos.org/files/12938/picture-element-narrow.png"
+                    style="display: block; height: 710px; margin: 0px auto; width: 320px;"></p>
+
+        <div class="note">
+            <p><strong>Note</strong>: You should use the <code>media</code> attribute only in art direction scenarios;
+                when you do use <code>media</code>, don't also offer media conditions within the <code>sizes</code>
+                attribute.</p>
+        </div>
+
+        <h3 id="Why_cant_we_just_do_this_using_CSS_or_JavaScript">Why can't we just do this using CSS or
+            JavaScript?</h3>
+
+        <p>When the browser starts to load a page, it starts to download (preload) any images before the main parser has
+            started to load and interpret the page's CSS and JavaScript. This is a useful technique, which has shaved an
+            average of 20% off page load times. However, it is not helpful for responsive images, hence the need to
+            implement solutions like <code>srcset</code>. For example, you couldn't load the <a
+                    href="/en-US/docs/Web/HTML/Element/img"
+                    title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element, then detect the viewport width with JavaScript, and then dynamically change the source image to a
+            smaller one if desired. By then, the original image would already have been loaded, and you would load the
+            small image as well, which is even worse in responsive image terms.</p>
+
+        <ul>
+        </ul>
+
+        <h3 id="Use_modern_image_formats_boldly">Use modern image formats boldly</h3>
+
+        <p>There are several exciting new image formats (such as <a href="/en-US/docs/Glossary/webp">WebP</a> and
+            JPEG-2000) that can maintain a low file size and high quality at the same time. However, browser support is
+            spotty.</p>
+
+        <p><code>&lt;picture&gt;</code> lets us continue catering to older browsers. You can supply MIME types inside
+            <code>type</code> attributes so the browser can immediately reject unsupported file types:</p>
+
+        <pre class="brush: html">&lt;picture&gt;
+  &lt;source type="image/svg+xml" srcset="pyramid.svg"&gt;
+  &lt;source type="image/webp" srcset="pyramid.webp"&gt;
+  &lt;img src="pyramid.png" alt="regular pyramid built from four equilateral triangles"&gt;
+&lt;/picture&gt;
+</pre>
+
+        <ul>
+            <li>Do <em>not </em>use the <code>media</code> attribute, unless you also need art direction.</li>
+            <li>In a <code>&lt;source&gt;</code> element, you can only refer to images of the type declared in <code>type</code>.
+            </li>
+            <li>Use comma-separated lists with <code>srcset</code> and <code>sizes</code>, as needed.</li>
+        </ul>
+
+        <h2 id="Active_learning_Implementing_your_own_responsive_images">Active learning: Implementing your own
+            responsive images</h2>
+
+        <p>For this active learning, we're expecting you to be brave and go it alone ... mostly. We want you to
+            implement your own suitable art directed narrow screen/wide screen shot using <code>&lt;picture&gt;</code>,
+            and a resolution switching example that uses <code>srcset</code>.</p>
+
+        <ol>
+            <li>Write some simple HTML to contain your code (use <code>not-responsive.html</code> as a starting point,
+                if you like).
+            </li>
+            <li>Find a nice wide screen landscape image with some kind of detail contained in it somewhere. Create a
+                web-sized version of it using a graphics editor, then crop it to show a smaller part that zooms in on
+                the detail, and create a second image (about 480px wide is good for this).
+            </li>
+            <li>Use the <code>&lt;picture&gt;</code> element to implement an art direction picture switcher!</li>
+            <li>Create multiple image files of different sizes, each showing the same picture.</li>
+            <li>Use <code>srcset</code>/<code>size</code> to create a resolution switcher example, either to serve the
+                same size image at different resolutions, or different image sizes at different viewport widths.
+            </li>
+        </ol>
+
+        <h2 id="Test_your_skills!">Test your skills!</h2>
+
+        <p>You've reached the end of this article, but can you remember the most important information? You can find a
+            detailed assessment that tests these skills at the end of the module; see <a
+                    href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page">Mozilla splash page</a>.
+        </p>
+
+        <h2 id="Summary">Summary</h2>
+
+        <p>That's a wrap for responsive images — we hope you enjoyed playing with these new techniques. As a recap,
+            there are two distinct problems we've been discussing here:</p>
+
+        <ul>
+            <li><strong>Art direction</strong>: The problem whereby you want to serve cropped images for different
+                layouts — for example a landscape image showing a full scene for a desktop layout, and a portrait image
+                showing the main subject zoomed in for a mobile layout. You can solve this problem using the <a
+                        href="/en-US/docs/Web/HTML/Element/picture"
+                        title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>
+                element.
+            </li>
+            <li><strong>Resolution switching</strong>: The problem whereby you want to serve smaller image files to
+                narrow screen devices, as they don't need huge images like desktop displays do — and also optionally
+                that you want to serve different resolution images to high density/low density screens. You can solve
+                this problem by using <a
+                        href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">vector
+                    graphics</a> (SVG images) and the <code><a href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>
+                with <code><a href="/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code> attributes.
+            </li>
+        </ul>
+
+        <p>This also draws to a close the entire <a href="/en-US/docs/Learn/HTML/Multimedia_and_embedding">Multimedia
+                and embedding</a> module! The only thing to do now before moving on is to try our multimedia assessment,
+            and see how you get on. Have fun!</p>
+        <div class="next-steps">
+    <hr class="line">
+    <h2>Next steps</h2>
+    <ul>
+        <li><h4><a href="/web_docs/html_section/learn_the_basics">Learn the basics</a></h4> </li>
+        <li><h4><a href="/web_docs/html_section/text_inputs/">Text field and inputs </a></h4></li>
+        <li><h4><a href="/web_docs/html_section/what_are_vector_graphics/">What are vector graphics?</a></h4></li>
+        <li><h4><a href="/web_docs/html_section/responsive_images/">Responsive images</a></h4></li>
+        <li><h4><a href="/web_docs/html_section/conventions_and_best_practices/">Conventions and Best Practices</a></h4></li>
+    </ul>
+    <hr class="line">
+</div>
+    </div>
+
+</div>
+<script>
+    // little script, SORRY)
+    function scrollToInput() {
+        var name_element = document.getElementById('input-search').value;
+        document.getElementById(name_element).scrollIntoView(true);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widthitial-scale=1, shrink-to-fit=no">
+    <title> HTML docs </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Raleway&family=Roboto&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    
+    <link rel="stylesheet" href="/web_docs/components/main.css">
+    <link rel="stylesheet" href="/web_docs/components/next_steps.css">
+
+</head>
+<body class="HTML_page">
+<nav class="navbar bg-white">
+    <div class="nav-inner">
+        <div class="logo-container">
+            <a href="/web_docs/" class="logo" aria-label="Web Docs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.629" height="59.677" viewBox="0 0 1463 458">
+  <image x="1" width="1461" height="458" xlink:href="data:img/png;base64,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"/>
+</svg>
+</a>
+            
+        </div>
+        <div class="form-container">
+            <form class="form-inline" action="javascript:;" onsubmit="scrollToInput()">
+                <input id="input-search" type="search" placeholder="Search"
+                       list="listOfContent"
+                       autocomplete="off" aria-label="Search">
+                <datalist id="listOfContent">
+                    
+                    
+                </datalist>
+                <button class="btn" type="submit">Search
+                </button>
+            </form>
+        </div>
+        <ul class="navigation">
+            <li id="home_page"><a href="/web_docs/">Home</a></li>
+            <li id="html_page"><a href="/web_docs/html_section/">HTML docs</a></li>
+            <li id="css_page"><a href="/web_docs/css_section/">CSS docs</a></li>
+        </ul>
+
+    </div>
+</nav>
+<div class="titlebar-container">
+    <div class="titlebar"><h1 class="title">What are vector graphics?</h1></div>
+</div>
+<div class="main">
+    
+    <div class="block">
+        <p>On the web, you'll work with two types of image — <strong>raster images</strong>, and <strong>vector
+                images</strong>:</p>
+
+        <ul>
+            <li><strong>Raster images</strong> are defined using a grid of pixels — a raster image file contains
+                information
+                showing exactly where each pixel is to be placed, and exactly what color it should be. Popular web
+                raster
+                formats include Bitmap (<code>.bmp</code>), PNG (<code>.png</code>), JPEG (<code>.jpg</code>), and GIF
+                (<code>.gif</code>.)
+            </li>
+            <li><strong>Vector images</strong> are defined using algorithms — a vector image file contains shape and
+                path
+                definitions that the computer can use to work out what the image should look like when rendered on the
+                screen. The <a href="/en-US/docs/Glossary/SVG">SVG</a> format allows us to create powerful vector
+                graphics
+                for use on the Web.
+            </li>
+        </ul>
+
+        <p>To give you an idea of the difference between the two, let's look at an example. You can find this example
+            live
+            on our Github repo as <a class="external"
+                                     href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/adding-vector-graphics-to-the-web/vector-versus-raster.html"
+                                     rel="noopener">vector-versus-raster.html</a> — it shows two seemingly identical
+            images
+            side by side, of a red star with a black drop shadow. The difference is that the left one is a PNG, and the
+            right one is an SVG image.</p>
+
+        <p>The difference becomes apparent when you zoom in the page — the PNG image becomes pixellated as you zoom in
+            because it contains information on where each pixel should be (and what color). When it is zoomed, each
+            pixel is
+            simply increased in size to fill multiple pixels on screen, so the image starts to look blocky. The vector
+            image
+            however continues to look nice and crisp, because no matter what size it is, the algorithms are used to work
+            out
+            the shapes in the image, with the values simply being scaled as it gets bigger.</p>
+
+        <p><img alt="Two star images" src="https://mdn.mozillademos.org/files/12866/raster-vector-default-size.png"
+                style="display: block; height: 112px; margin: 0px auto; width: 223px;"></p>
+
+        <p><img alt="Two star images zoomed in, one crisp and the other blurry"
+                src="https://mdn.mozillademos.org/files/12868/raster-vector-zoomed.png"
+                style="display: block; height: 328px; margin: 0px auto; width: 677px;"></p>
+
+        <div class="note">
+            <p><strong>Note</strong>: The images above are actually all PNGs — with the left-hand star in each case
+                representing a raster image, and the right-hand star representing a vector image. Again, go to the <a
+                        class="external"
+                        href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/adding-vector-graphics-to-the-web/vector-versus-raster.html"
+                        rel="noopener">vector-versus-raster.html</a> demo for a real example!</p>
+        </div>
+
+        <p>Moreover, vector image files are much lighter than their raster equivalents, because they only need to hold a
+            handful of algorithms, rather than information on every pixel in the image individually.</p>
+
+        <h2 id="What_is_SVG">What is SVG?</h2>
+
+        <p><a href="/en-US/docs/Web/SVG">SVG</a> is an <a href="/en-US/docs/Glossary/XML">XML</a>-based language for
+            describing vector images. It's basically markup, like HTML, except that you've got many different elements
+            for
+            defining the shapes you want to appear in your image, and the effects you want to apply to those shapes. SVG
+            is
+            for marking up graphics, not content. At the simplest end of the spectrum, you've got elements for creating
+            simple shapes, like <a href="/en-US/docs/Web/SVG/Element/circle"
+                                   title="The &lt;circle> SVG element is an SVG basic shape, used to draw circles based on a center point and a radius."><code>&lt;circle&gt;</code></a>
+            and <a href="/en-US/docs/Web/SVG/Element/rect"
+                   title="The &lt;rect> element is a basic SVG shape that draws rectangles, defined by their position, width, and height. The rectangles may have their corners rounded."><code>&lt;rect&gt;</code></a>.
+            More advanced SVG features include <a href="/en-US/docs/Web/SVG/Element/feColorMatrix"
+                                                  title="The &lt;feColorMatrix> SVG filter element changes colors based on a transformation matrix. Every pixel's color value  [R,G,B,A] is matrix multiplied by a 5 by 5 color matrix to create new color [R',G',B',A']."><code>&lt;feColorMatrix&gt;</code></a>
+            (transform colors using a transformation matrix,) <a href="/en-US/docs/Web/SVG/Element/animate"
+                                                                 title="The SVG &lt;animate> element provides a way to animate an attribute of an element over time."><code>&lt;animate&gt;</code></a>
+            (animate parts of your vector graphic,) and <a href="/en-US/docs/Web/SVG/Element/mask"
+                                                           title="The &lt;mask> element defines an alpha mask for compositing the current object into the background. A mask is used/referenced using the mask property."><code>&lt;mask&gt;</code></a>
+            (apply a mask over the top of your image.)</p>
+
+        <p>As a simple example, the following code creates a circle and a rectangle:</p>
+
+        <pre class="brush: html">&lt;svg version="1.1"
+     baseProfile="full"
+     width="300" height="200"
+     xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;rect width="100%" height="100%" fill="black" /&gt;
+  &lt;circle cx="150" cy="100" r="90" fill="blue" /&gt;
+&lt;/svg&gt;</pre>
+
+        <p>This creates the following output:</p>
+
+        <p>
+            <iframe class="live-sample-frame hide-codepen-jsfiddle" frameborder="0" height="200" id="frame_What_is_SVG"
+                    src="https://mdn.mozillademos.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web$samples/What_is_SVG?revision=1613202"
+                    width="300"></iframe>
+        </p>
+
+        <p>From the example above, you may get the impression that SVG is easy to handcode. Yes, you can handcode simple
+            SVG
+            in a text editor, but for a complex image this quickly starts to get very difficult. For creating SVG
+            images,
+            most people use a vector graphics editor like <a class="external" href="https://inkscape.org/en/"
+                                                             rel="noopener">Inkscape</a> or <a class="external"
+                                                                                               href="https://en.wikipedia.org/wiki/Adobe_Illustrator"
+                                                                                               rel="noopener">Illustrator</a>.
+            These packages allow you to create a variety of illustrations using various graphics tools, and create
+            approximations of photos (for example Inkscape's Trace Bitmap feature.)</p>
+
+        <p>SVG has some additional advantages besides those described so far:</p>
+
+        <ul>
+            <li>Text in vector images remains accessible (which also benefits your <a
+                        href="/en-US/docs/Glossary/SEO">SEO</a>).
+            </li>
+            <li>SVGs lend themselves well to styling/scripting, because each component of the image is an element that
+                can
+                be styled via CSS or scripted via JavaScript.
+            </li>
+        </ul>
+
+        <p>So why would anyone want to use raster graphics over SVG? Well, SVG does have some disadvantages:</p>
+
+        <ul>
+            <li>SVG can get complicated very quickly, meaning that file sizes can grow; complex SVGs can also take
+                significant processing time in the browser.
+            </li>
+            <li>SVG can be harder to create than raster images, depending on what kind of image you are trying to
+                create.
+            </li>
+            <li>SVG is not supported in older browsers, so may not be suitable if you need to support older versions of
+                Internet Explorer with your web site (SVG started being supported as of IE9.)
+            </li>
+        </ul>
+
+        <p>Raster graphics are arguably better for complex precision images such as photos, for the reasons described
+            above.</p>
+
+        <div class="note">
+            <p><strong>Note</strong>: In Inkscape, save your files as Plain SVG to save space. Also, please refer to
+                this <a
+                        class="external" href="http://tavmjong.free.fr/INKSCAPE/MANUAL/html/Web-Inkscape.html"
+                        rel="noopener">article describing how to prepare SVGs for the Web</a>.</p>
+        </div>
+
+        <h2 id="Adding_SVG_to_your_pages">Adding SVG to your pages</h2>
+
+        <p>In this section we'll go through the different ways in which you can add SVG vector graphics to your web
+            pages.</p>
+
+        <h3 id="The_quick_way_&lt;img>">The quick way: <a href="/en-US/docs/Web/HTML/Element/img"
+                                                          title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+        </h3>
+
+        <p>To embed an SVG via an <a href="/en-US/docs/Web/HTML/Element/img"
+                                     title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element, you just need to reference it in the src attribute as you'd expect. You will need a
+            <code>height</code>
+            or a <code>width</code> attribute (or both if your SVG has no inherent aspect ratio). If you have not
+            already
+            done so, please read <a href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">Images in
+                HTML</a>.
+        </p>
+
+        <pre class="brush: html">&lt;img
+    src="equilateral.svg"
+    alt="triangle with all three sides equal"
+    height="87"
+    width="100" /&gt;</pre>
+
+        <h4 id="Pros">Pros</h4>
+
+        <ul>
+            <li>Quick, familiar image syntax with built-in text equivalent available in the <code>alt</code> attribute.
+            </li>
+            <li>You can make the image into a hyperlink easily by nesting the <code>&lt;img&gt;</code> inside an <a
+                        href="/en-US/docs/Web/HTML/Element/a"
+                        title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a>
+                element.
+            </li>
+            <li>The SVG file can be cached by the browser, resulting in faster loading times for any page that uses the
+                image loaded in the future.
+            </li>
+        </ul>
+
+        <h4 id="Cons">Cons</h4>
+
+        <ul>
+            <li>You cannot manipulate the image with JavaScript.</li>
+            <li>If you want to control the SVG content with CSS, you must include inline CSS styles in your SVG code.
+                (External stylesheets invoked from the SVG file take no effect.)
+            </li>
+            <li>You cannot restyle the image with CSS pseudoclasses (like <code>:focus</code>).</li>
+        </ul>
+
+        <h3 id="Troubleshooting_and_cross-browser_support">Troubleshooting and cross-browser support</h3>
+
+        <p>For browsers that don't support SVG (IE 8 and below, Android 2.3 and below), you could reference a PNG or JPG
+            from your <code>src</code> attribute and use a <code><a href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>
+            attribute (which only recent browsers recognize) to reference the SVG. This being the case, only supporting
+            browsers will load the SVG — older browsers will load the PNG instead:</p>
+
+        <pre class="brush: html">&lt;img src="equilateral.png" alt="triangle with equal sides" srcset="equilateral.svg"&gt;</pre>
+
+        <p>You can also use SVGs as CSS background images, as shown below. In the below code, older browsers will stick
+            with
+            the PNG that they understand, while newer browsers will load the SVG:</p>
+
+        <pre class="brush: css"><code>background: url("fallback.png") no-repeat center;</code>
+<code>background-image: url("image.svg");
+background-size: contain;</code></pre>
+
+        <p>Like the <code>&lt;img&gt;</code> method described above, inserting SVGs using CSS background images means
+            that
+            the SVG can't be manipulated with JavaScript, and is also subject to the same CSS limitations.</p>
+
+        <p>If your SVGs aren't showing up at all, it might be because your server isn't set up properly. If that's the
+            problem, this <a href="/en-US/docs/Web/SVG/Tutorial/Getting_Started#A_Word_on_Webservers">article will point
+                you
+                in the right direction</a>.</p>
+
+        <h3 id="How_to_include_SVG_code_inside_your_HTML">How to include SVG code inside your HTML</h3>
+
+        <p>You can also open up the SVG file in a text editor, copy the SVG code, and paste it into your HTML document —
+            this is sometimes called putting your <strong>SVG inline</strong>, or <strong>inlining SVG</strong>. Make
+            sure
+            your SVG code snippet begins and ends with the <code><a href="/en-US/docs/Web/SVG/Element/svg">&lt;svg&gt;&lt;/svg&gt;</a></code>
+            tags (don't include anything outside those.) Here's a very simple example of what you might paste into your
+            document:</p>
+
+        <pre class="brush: html">&lt;svg width="300" height="200"&gt;
+    &lt;rect width="100%" height="100%" fill="green" /&gt;
+&lt;/svg&gt;
+</pre>
+
+        <h4 id="Pros_2">Pros</h4>
+
+        <ul>
+            <li>Putting your SVG inline saves an HTTP request, and therefore can reduce a bit your loading time.</li>
+            <li>You can assign <code>class</code>es and <code>id</code>s to SVG elements and style them with CSS, either
+                within the SVG or wherever you put the CSS style rules for your HTML document. In fact, you can use any
+                <a
+                        href="/en-US/docs/Web/SVG/Attribute#Presentation_attributes">SVG presentation attribute </a>as a
+                CSS
+                property.
+            </li>
+            <li>Inlining SVG is the only approach that lets you use CSS interactions (like <code>:focus</code>) and CSS
+                animations on your SVG image (even in your regular stylesheet.)
+            </li>
+            <li>You can make SVG markup into a hyperlink by wrapping it in an <a href="/en-US/docs/Web/HTML/Element/a"
+                                                                                 title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a>
+                element.
+            </li>
+        </ul>
+
+        <h4 id="Cons_2">Cons</h4>
+
+        <ul>
+            <li>This method is only suitable if you're using the SVG in only one place. Duplication makes for
+                resource-intensive maintenance.
+            </li>
+            <li>Extra SVG code increases the size of your HTML file.</li>
+            <li>The browser cannot cache inline SVG as it would cache regular image assets, so pages that include the
+                image
+                will not load faster after the first page containing the image is loaded.
+            </li>
+            <li>You may include fallback in a <a href="/en-US/docs/Web/SVG/Element/foreignObject"
+                                                 title="The &lt;foreignObject> SVG element includes elements from a different XML namespace. In the context of a browser, it is most likely (X)HTML."><code>&lt;foreignObject&gt;</code></a>
+                element, but browsers that support SVG still download any fallback images. You need to weigh whether the
+                extra overhead is really worthwhile, just to support obsolescent browsers.
+            </li>
+        </ul>
+
+        <ul>
+        </ul>
+
+        <h3 id="How_to_embed_an_SVG_with_an_&lt;iframe>">How to embed an SVG with an <a
+                    href="/en-US/docs/Web/HTML/Element/iframe"
+                    title="The HTML Inline Frame element (&lt;iframe>) represents a nested browsing context, embedding another HTML page into the current one."><code>&lt;iframe&gt;</code></a>
+        </h3>
+
+        <p>You can open SVG images in your browser just like webpages. So embedding an SVG document with an <code>&lt;iframe&gt;</code>
+            is done just like we studied in <a
+                    href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies">From &lt;object&gt;
+                to &lt;iframe&gt; — other embedding technologies</a>.</p>
+
+        <p>Here's a quick review:</p>
+
+        <pre class="brush: html">&lt;iframe src="triangle.svg" width="500" height="500" sandbox&gt;
+    &lt;img src="triangle.png" alt="Triangle with three unequal sides" /&gt;
+&lt;/iframe&gt;</pre>
+
+        <p>This is definitely not the best method to choose:</p>
+
+        <h4 id="Cons_3">Cons</h4>
+
+        <ul>
+            <li><code>iframe</code>s do have a fallback mechanism, as you can see, but browsers only display the
+                fallback if
+                they lack support for <code>iframe</code>s altogether.
+            </li>
+            <li>Moreover, unless the SVG and your current webpage have the same <a
+                        href="/en-US/docs/Glossary/origin">origin</a>, you cannot use JavaScript on your main webpage to
+                manipulate the SVG.
+            </li>
+        </ul>
+
+
+        <h2 id="Summary">Summary</h2>
+
+        <p>This article has provided you with a quick tour of what vector graphics and SVG are, why they are useful to
+            know
+            about, and how to include SVG inside your webpages. It was never intended to be a full guide to learning
+            SVG,
+            just a pointer so you know what SVG is if you meet it in your travels around the Web. So don't worry if you
+            don't feel like you are an SVG expert yet. We've included some links below that might help you if you wish
+            to go
+            and find out more about how it works.</p>
+
+        <p>In the last article of this module we will explore responsive images in detail, looking at the tools HTML has
+            to
+            allow you to make your images work better across different devices.</p>
+
+        <div class="next-steps">
+    <hr class="line">
+    <h2>Next steps</h2>
+    <ul>
+        <li><h4><a href="/web_docs/html_section/learn_the_basics">Learn the basics</a></h4> </li>
+        <li><h4><a href="/web_docs/html_section/text_inputs/">Text field and inputs </a></h4></li>
+        <li><h4><a href="/web_docs/html_section/what_are_vector_graphics/">What are vector graphics?</a></h4></li>
+        <li><h4><a href="/web_docs/html_section/responsive_images/">Responsive images</a></h4></li>
+        <li><h4><a href="/web_docs/html_section/conventions_and_best_practices/">Conventions and Best Practices</a></h4></li>
+    </ul>
+    <hr class="line">
+</div>
+    </div>
+
+</div>
+<script>
+    // little script, SORRY)
+    function scrollToInput() {
+        var name_element = document.getElementById('input-search').value;
+        document.getElementById(name_element).scrollIntoView(true);
+    }
+</script>
+</body>
+</html>

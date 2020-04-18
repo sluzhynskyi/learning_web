@@ -134,27 +134,50 @@
         </ol>
         <h3 id="Nesting_elements">Nesting elements</h3>
 
-        <p>You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a <a href="/en-US/docs/Web/HTML/Element/strong" title="The HTML Strong Importance Element (&lt;strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."><code>&lt;strong&gt;</code></a> element, which means that the word is to be strongly emphasized:</p>
+        <p>You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to
+            state that our cat is <strong>very</strong> grumpy, we could wrap the word "very" in a <a
+                    href="/en-US/docs/Web/HTML/Element/strong"
+                    title="The HTML Strong Importance Element (&lt;strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."><code>&lt;strong&gt;</code></a>
+            element, which means that the word is to be strongly emphasized:</p>
 
         <pre class="brush: html">&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</pre>
 
-        <p>You do however need to make sure that your elements are properly nested. In the example above, we opened the <a href="/en-US/docs/Web/HTML/Element/p" title="The HTML &lt;p> element represents a paragraph."><code>&lt;p&gt;</code></a> element first, then the <a href="/en-US/docs/Web/HTML/Element/strong" title="The HTML Strong Importance Element (&lt;strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."><code>&lt;strong&gt;</code></a> element; therefore, we have to close the <a href="/en-US/docs/Web/HTML/Element/strong" title="The HTML Strong Importance Element (&lt;strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."><code>&lt;strong&gt;</code></a> element first, then the <a href="/en-US/docs/Web/HTML/Element/p" title="The HTML &lt;p> element represents a paragraph."><code>&lt;p&gt;</code></a> element. The following is incorrect:</p>
+        <p>You do however need to make sure that your elements are properly nested. In the example above, we opened the
+            <a href="/en-US/docs/Web/HTML/Element/p" title="The HTML &lt;p> element represents a paragraph."><code>&lt;p&gt;</code></a>
+            element first, then the <a href="/en-US/docs/Web/HTML/Element/strong"
+                                       title="The HTML Strong Importance Element (&lt;strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."><code>&lt;strong&gt;</code></a>
+            element; therefore, we have to close the <a href="/en-US/docs/Web/HTML/Element/strong"
+                                                        title="The HTML Strong Importance Element (&lt;strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."><code>&lt;strong&gt;</code></a>
+            element first, then the <a href="/en-US/docs/Web/HTML/Element/p"
+                                       title="The HTML &lt;p> element represents a paragraph."><code>&lt;p&gt;</code></a>
+            element. The following is incorrect:</p>
 
         <pre class="example-bad brush: html">&lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;</pre>
 
-        <p>The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap as shown above, then your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. So don't do it!</p>
+        <p>The elements have to open and close correctly so that they are clearly inside or outside one another. If they
+            overlap as shown above, then your web browser will try to make the best guess at what you were trying to
+            say, which can lead to unexpected results. So don't do it!</p>
 
         <h3 id="Empty_elements">Empty elements</h3>
 
-        <p>Some elements have no content and are called <strong>empty elements</strong>. Take the <a href="/en-US/docs/Web/HTML/Element/img" title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a> element that we already have in our HTML page:</p>
+        <p>Some elements have no content and are called <strong>empty elements</strong>. Take the <a
+                    href="/en-US/docs/Web/HTML/Element/img"
+                    title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element that we already have in our HTML page:</p>
 
         <pre class="brush: html">&lt;img src="images/firefox-icon.png" alt="My test image"&gt;</pre>
 
-        <p>This contains two attributes, but there is no closing <code>&lt;/img&gt;</code> tag and no inner content. This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the place it appears.</p>
+        <p>This contains two attributes, but there is no closing <code>&lt;/img&gt;</code> tag and no inner content.
+            This is because an image element doesn't wrap content to affect it. Its purpose is to embed an image in the
+            HTML page in the place it appears.</p>
 
         <h3 id="Anatomy_of_an_HTML_document">Anatomy of an HTML document</h3>
 
-        <p>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page. Let's revisit the code we put into our <code>index.html</code> example (which we first met in the <a href="/en-US/Learn/Getting_started_with_the_web/Dealing_with_files">Dealing with files</a> article):</p>
+        <p>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at
+            how individual elements are combined to form an entire HTML page. Let's revisit the code we put into our
+            <code>index.html</code> example (which we first met in the <a
+                    href="/en-US/Learn/Getting_started_with_the_web/Dealing_with_files">Dealing with files</a> article):
+        </p>
 
         <pre class="brush: html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -170,37 +193,78 @@
         <p>Here, we have the following:</p>
 
         <ul>
-            <li><code>&lt;!DOCTYPE html&gt;</code> — the doctype. It is required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However these days, they don't do much, and are basically just needed to make sure your document behaves correctly. That's all you need to know for now.</li>
-            <li><code>&lt;html&gt;&lt;/html&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/html" title="The HTML &lt;html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element."><code>&lt;html&gt;</code></a> element. This element wraps all the content on the entire page and is sometimes known as the root element.</li>
-            <li><code>&lt;head&gt;&lt;/head&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/head" title="The HTML &lt;head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets."><code>&lt;head&gt;</code></a> element. This element acts as a container for all the stuff you want to include on the HTML page that <em>isn't</em> the content you are showing to your page's viewers. This includes things like <a href="/en-US/docs/Glossary/keyword">keywords</a> and a page description that you want to appear in search results, CSS to style our content, character set declarations and more.</li>
-            <li><code>&lt;meta charset="utf-8"&gt;</code> — This element sets the character set your document should use to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this and it can help avoid some problems later on.</li>
-            <li><code>&lt;title&gt;&lt;/title&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/title" title="The HTML Title element (&lt;title>) defines the document's title that is shown in a browser's title bar or a page's tab."><code>&lt;title&gt;</code></a> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it.</li>
-            <li><code>&lt;body&gt;&lt;/body&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/body" title="The HTML &lt;body> Element represents the content of an HTML document. There can be only one &lt;body> element in a document."><code>&lt;body&gt;</code></a> element. This contains <em>all</em> the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks or whatever else.</li>
+            <li><code>&lt;!DOCTYPE html&gt;</code> — the doctype. It is required preamble. In the mists of time, when
+                HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML
+                page had to follow to be considered good HTML, which could mean automatic error checking and other
+                useful things. However these days, they don't do much, and are basically just needed to make sure your
+                document behaves correctly. That's all you need to know for now.
+            </li>
+            <li><code>&lt;html&gt;&lt;/html&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/html"
+                                                                title="The HTML &lt;html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element."><code>&lt;html&gt;</code></a>
+                element. This element wraps all the content on the entire page and is sometimes known as the root
+                element.
+            </li>
+            <li><code>&lt;head&gt;&lt;/head&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/head"
+                                                                title="The HTML &lt;head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets."><code>&lt;head&gt;</code></a>
+                element. This element acts as a container for all the stuff you want to include on the HTML page that
+                <em>isn't</em> the content you are showing to your page's viewers. This includes things like <a
+                        href="/en-US/docs/Glossary/keyword">keywords</a> and a page description that you want to appear
+                in search results, CSS to style our content, character set declarations and more.
+            </li>
+            <li><code>&lt;meta charset="utf-8"&gt;</code> — This element sets the character set your document should use
+                to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can
+                now handle any textual content you might put on it. There is no reason not to set this and it can help
+                avoid some problems later on.
+            </li>
+            <li><code>&lt;title&gt;&lt;/title&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/title"
+                                                                  title="The HTML Title element (&lt;title>) defines the document's title that is shown in a browser's title bar or a page's tab."><code>&lt;title&gt;</code></a>
+                element. This sets the title of your page, which is the title that appears in the browser tab the page
+                is loaded in. It is also used to describe the page when you bookmark/favourite it.
+            </li>
+            <li><code>&lt;body&gt;&lt;/body&gt;</code> — the <a href="/en-US/docs/Web/HTML/Element/body"
+                                                                title="The HTML &lt;body> Element represents the content of an HTML document. There can be only one &lt;body> element in a document."><code>&lt;body&gt;</code></a>
+                element. This contains <em>all</em> the content that you want to show to web users when they visit your
+                page, whether that's text, images, videos, games, playable audio tracks or whatever else.
+            </li>
         </ul>
         <hr class="line">
         <h2 id="Images">Images</h2>
 
-        <p>Let's turn our attention to the <a href="/en-US/docs/Web/HTML/Element/img" title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a> element again:</p>
+        <p>Let's turn our attention to the <a href="/en-US/docs/Web/HTML/Element/img"
+                                              title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element again:</p>
 
         <pre class="brush: html">&lt;img src="images/firefox-icon.png" alt="My test image"&gt;</pre>
 
-        <p>As we said before, it embeds an image into our page in the position it appears. It does this via the <code>src</code> (source) attribute, which contains the path to our image file.</p>
+        <p>As we said before, it embeds an image into our page in the position it appears. It does this via the <code>src</code>
+            (source) attribute, which contains the path to our image file.</p>
 
-        <p>We have also included an <code>alt</code> (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because of the following reasons:</p>
+        <p>We have also included an <code>alt</code> (alternative) attribute. In this attribute, you specify descriptive
+            text for users who cannot see the image, possibly because of the following reasons:</p>
 
         <ol>
-            <li>They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li>
-            <li>Something has gone wrong causing the image not to display. For example, try deliberately changing the path inside your <code>src</code> attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:</li>
+            <li>They are visually impaired. Users with significant visual impairments often use tools called screen
+                readers to read out the alt text to them.
+            </li>
+            <li>Something has gone wrong causing the image not to display. For example, try deliberately changing the
+                path inside your <code>src</code> attribute to make it incorrect. If you save and reload the page, you
+                should see something like this in place of the image:
+            </li>
         </ol>
 
-        <p><img alt="" src="https://mdn.mozillademos.org/files/9349/alt-text-example.png" style="display: block; height: 36px; margin: 0px auto; width: 108px;"></p>
+        <p><img alt="" src="https://mdn.mozillademos.org/files/9349/alt-text-example.png"
+                style="display: block; height: 36px; margin: 0px auto; width: 108px;"></p>
 
-        <p>The keywords for alt text are "descriptive text". The alt text you write should provide the reader with enough information to have a good idea of what the image conveys. In this example, our current text of "My test image" is no good at all. A much better alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."</p>
+        <p>The keywords for alt text are "descriptive text". The alt text you write should provide the reader with
+            enough information to have a good idea of what the image conveys. In this example, our current text of "My
+            test image" is no good at all. A much better alternative for our Firefox logo would be "The Firefox logo: a
+            flaming fox surrounding the Earth."</p>
 
         <p>Try coming up with some better alt text for your image now.</p>
 
         <div class="note">
-            <p>Find out more about accessibility in our <a href="/en-US/docs/Learn/Accessibility">accessibility learning module</a>.</p>
+            <p>Find out more about accessibility in our <a href="/en-US/docs/Learn/Accessibility">accessibility learning
+                    module</a>.</p>
         </div>
 
         <h2 id="Marking_up_text">Marking up text</h2>
@@ -209,37 +273,69 @@
 
         <h3 id="Headings">Headings</h3>
 
-        <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles and subtitles, an HTML document can too. HTML contains 6 heading levels, <a href="/en-US/docs/Web/HTML/Element/h1" title="REDIRECT Heading elements [en-US]"><code>&lt;h1&gt;</code></a>–<a href="/en-US/docs/Web/HTML/Element/h6" title="REDIRECT Heading elements [en-US]"><code>&lt;h6&gt;</code></a>, although you'll commonly only use 3 to 4 at most:</p>
+        <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In
+            the same way that a book has the main title, chapter titles and subtitles, an HTML document can too. HTML
+            contains 6 heading levels, <a href="/en-US/docs/Web/HTML/Element/h1"
+                                          title="REDIRECT Heading elements [en-US]"><code>&lt;h1&gt;</code></a>–<a
+                    href="/en-US/docs/Web/HTML/Element/h6"
+                    title="REDIRECT Heading elements [en-US]"><code>&lt;h6&gt;</code></a>, although you'll commonly only
+            use 3 to 4 at most:</p>
 
         <pre class="brush: html">&lt;h1&gt;My main title&lt;/h1&gt;
 &lt;h2&gt;My top level heading&lt;/h2&gt;
 &lt;h3&gt;My subheading&lt;/h3&gt;
 &lt;h4&gt;My sub-subheading&lt;/h4&gt;</pre>
 
-        <p>Now try adding a suitable title to your HTML page just above your <a href="/en-US/docs/Web/HTML/Element/img" title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a> element.</p>
+        <p>Now try adding a suitable title to your HTML page just above your <a href="/en-US/docs/Web/HTML/Element/img"
+                                                                                title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element.</p>
 
         <div class="note">
-            <p><strong>Note</strong>: You'll see that your heading level 1 has an implicit style. Don't use heading elements to make text bigger or bold, because they are used for <a href="/en-US/docs/Learn/Accessibility/HTML#Text_content">accessibility</a> and <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#Why_do_we_need_structure">other reasons such as SEO</a>. Try to create a meaningful sequence of headings on your pages, without skipping levels.</p>
+            <p><strong>Note</strong>: You'll see that your heading level 1 has an implicit style. Don't use heading
+                elements to make text bigger or bold, because they are used for <a
+                        href="/en-US/docs/Learn/Accessibility/HTML#Text_content">accessibility</a> and <a
+                        href="/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#Why_do_we_need_structure">other
+                    reasons such as SEO</a>. Try to create a meaningful sequence of headings on your pages, without
+                skipping levels.</p>
         </div>
 
         <h3 id="Paragraphs">Paragraphs</h3>
 
-        <p>As explained above, <a href="/en-US/docs/Web/HTML/Element/p" title="The HTML &lt;p> element represents a paragraph."><code>&lt;p&gt;</code></a> elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:</p>
+        <p>As explained above, <a href="/en-US/docs/Web/HTML/Element/p"
+                                  title="The HTML &lt;p> element represents a paragraph."><code>&lt;p&gt;</code></a>
+            elements are for containing paragraphs of text; you'll use these frequently when marking up regular text
+            content:</p>
 
         <pre class="brush: html">&lt;p&gt;This is a single paragraph&lt;/p&gt;</pre>
 
-        <p>Add your sample text (you should have it from <a href="/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like"><em>What should your website look like?</em></a>) into one or a few paragraphs, placed directly below your <a href="/en-US/docs/Web/HTML/Element/img" title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a> element.</p>
+        <p>Add your sample text (you should have it from <a
+                    href="/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like"><em>What should
+                    your website look like?</em></a>) into one or a few paragraphs, placed directly below your <a
+                    href="/en-US/docs/Web/HTML/Element/img"
+                    title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
+            element.</p>
 
         <h3 id="Lists">Lists</h3>
 
-        <p>A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consist of at least 2 elements. The most common list types are ordered and unordered lists:</p>
+        <p>A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consist
+            of at least 2 elements. The most common list types are ordered and unordered lists:</p>
 
         <ol>
-            <li><strong>Unordered lists</strong> are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a <a href="/en-US/docs/Web/HTML/Element/ul" title="The HTML &lt;ul> element represents an unordered list of items, typically rendered as a bulleted list."><code>&lt;ul&gt;</code></a> element.</li>
-            <li><strong>Ordered lists</strong> are for lists where the order of the items does matter, such as a recipe. These are wrapped in an <a href="/en-US/docs/Web/HTML/Element/ol" title="The HTML &lt;ol> element represents an ordered list of items — typically rendered as a numbered list."><code>&lt;ol&gt;</code></a> element.</li>
+            <li><strong>Unordered lists</strong> are for lists where the order of the items doesn't matter, such as a
+                shopping list. These are wrapped in a <a href="/en-US/docs/Web/HTML/Element/ul"
+                                                         title="The HTML &lt;ul> element represents an unordered list of items, typically rendered as a bulleted list."><code>&lt;ul&gt;</code></a>
+                element.
+            </li>
+            <li><strong>Ordered lists</strong> are for lists where the order of the items does matter, such as a recipe.
+                These are wrapped in an <a href="/en-US/docs/Web/HTML/Element/ol"
+                                           title="The HTML &lt;ol> element represents an ordered list of items — typically rendered as a numbered list."><code>&lt;ol&gt;</code></a>
+                element.
+            </li>
         </ol>
 
-        <p>Each item inside the lists is put inside an <a href="/en-US/docs/Web/HTML/Element/li" title="The HTML &lt;li> element is used to represent an item in a list."><code>&lt;li&gt;</code></a> (list item) element.</p>
+        <p>Each item inside the lists is put inside an <a href="/en-US/docs/Web/HTML/Element/li"
+                                                          title="The HTML &lt;li> element is used to represent an item in a list."><code>&lt;li&gt;</code></a>
+            (list item) element.</p>
 
         <p>For example, if we wanted to turn the part of the following paragraph fragment into a list</p>
 
@@ -261,14 +357,22 @@
 
         <h2 id="Links">Links</h2>
 
-        <p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — <a href="/en-US/docs/Web/HTML/Element/a" title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a> — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:</p>
+        <p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element
+            — <a href="/en-US/docs/Web/HTML/Element/a"
+                 title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a>
+            — "a" being the short form for "anchor". To make text within your paragraph into a link, follow these steps:
+        </p>
 
         <ol>
             <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
-            <li>Wrap the text in an <a href="/en-US/docs/Web/HTML/Element/a" title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a> element, as shown below:
+            <li>Wrap the text in an <a href="/en-US/docs/Web/HTML/Element/a"
+                                       title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a>
+                element, as shown below:
                 <pre class="brush: html">&lt;a&gt;Mozilla Manifesto&lt;/a&gt;</pre>
             </li>
-            <li>Give the <a href="/en-US/docs/Web/HTML/Element/a" title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a> element an <code>href</code> attribute, as shown below:
+            <li>Give the <a href="/en-US/docs/Web/HTML/Element/a"
+                            title="The HTML &lt;a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a>
+                element an <code>href</code> attribute, as shown below:
                 <pre class="brush: html">&lt;a href=""&gt;Mozilla Manifesto&lt;/a&gt;</pre>
             </li>
             <li>Fill in the value of this attribute with the web address that you want the link to link to:
@@ -276,10 +380,23 @@
             </li>
         </ol>
 
-        <p>You might get unexpected results if you omit the <code>https://</code> or <code>http://</code> part, called the <em>protocol</em>, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.</p>
-        
-        <p>Add a link to your page now, if you haven't already done so.</p>
+        <p>You might get unexpected results if you omit the <code>https://</code> or <code>http://</code> part, called
+            the <em>protocol</em>, at the beginning of the web address. After making a link, click it to make sure it is
+            sending you where you wanted it to.</p>
 
+        <p>Add a link to your page now, if you haven't already done so.</p>
+        <div class="next-steps">
+    <hr class="line">
+    <h2>Next steps</h2>
+    <ul>
+        <li><h4><a href="/web_docs/html_section/learn_the_basics">Learn the basics</a></h4> </li>
+        <li><h4><a href="/web_docs/html_section/text_inputs/">Text field and inputs </a></h4></li>
+        <li><h4><a href="/web_docs/html_section/what_are_vector_graphics/">What are vector graphics?</a></h4></li>
+        <li><h4><a href="/web_docs/html_section/responsive_images/">Responsive images</a></h4></li>
+        <li><h4><a href="/web_docs/html_section/conventions_and_best_practices/">Conventions and Best Practices</a></h4></li>
+    </ul>
+    <hr class="line">
+</div>
     </div>
 
 </div>

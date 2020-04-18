@@ -22,7 +22,11 @@ This project is the dynamic site on poor HTML and CSS, about HTML5 and CSS, (kin
 #### Using:
   - [11ty/Eleventy](https://www.npmjs.com/package/@11ty/eleventy)- For local dynamic serving. 
   - [Nunjucks](https://www.npmjs.com/package/nunjucks) - For templating. 
- 
+ #### References:
+  - [MDN](https://developer.mozilla.org/en-US/) - Most of the information from this site.
+  - [WebsiteSetup](https://websitesetup.org/html-tutorial-beginners/) 
+  - [Medium](https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509)
+  - [StanfordEdu](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
 ## Quickstart
 
 ### Prerequisites :page_with_curl:

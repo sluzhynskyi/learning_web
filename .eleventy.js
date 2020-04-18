@@ -10,6 +10,6 @@ module.exports = eleventyConfig => {
             input: 'inputs',
             includes: "includes",
             output: "docs",
-        }, pathPrefix: "/web_docs/"
+        }, // pathPrefix: "/web_docs/"
     };
 };

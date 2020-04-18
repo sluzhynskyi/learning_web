@@ -92,14 +92,14 @@
 &lt;/div&gt;</pre>
 
         <p>Each one of the columns needs an outer element to contain its content and let us manipulate all of it at
-            once. In this example case we've chosen <a href="/en-US/docs/Web/HTML/Element/div"
+            once. In this example case we've chosen <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
                                                        title="The HTML Content Division element (&lt;div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."><code>&lt;div&gt;</code></a>s,
             but you could choose something more semantically appropriate like <a
-                    href="/en-US/docs/Web/HTML/Element/article"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
                     title="The HTML &lt;article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication)."><code>&lt;article&gt;</code></a>s,
-            <a href="/en-US/docs/Web/HTML/Element/section"
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
                title="The HTML &lt;section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."><code>&lt;section&gt;</code></a>s,
-            and <a href="/en-US/docs/Web/HTML/Element/aside"
+            and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
                    title="The HTML &lt;aside> element represents a portion of a document whose content is only indirectly related to the document's main content."><code>&lt;aside&gt;</code></a>,
             or whatever.</p>
 
@@ -113,11 +113,11 @@
 
         <p>The body will be 90% of the viewport wide until it gets to 900px wide, in which case it will stay fixed at
             this width and center itself in the viewport. By default, its children (the <a
-                    href="/en-US/docs/Web/HTML/Element/h1"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1"
                     title="REDIRECT Heading elements [en-US]"><code>&lt;h1&gt;</code></a> and the two <a
-                    href="/en-US/docs/Web/HTML/Element/div"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
                     title="The HTML Content Division element (&lt;div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."><code>&lt;div&gt;</code></a>s)
-            will span 100% of the width of the body. If we want the two <a href="/en-US/docs/Web/HTML/Element/div"
+            will span 100% of the width of the body. If we want the two <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
                                                                            title="The HTML Content Division element (&lt;div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."><code>&lt;div&gt;</code></a>s
             to be floated alongside one another, we need to set their widths to total 100% of the width of their parent
             element or smaller so they can fit alongside one another. Add the following to the bottom of your CSS:</p>
@@ -204,12 +204,12 @@ div:nth-of-type(2) {
 
         <h2 id="Creating_simple_legacy_grid_frameworks">Creating simple legacy grid frameworks</h2>
 
-        <p>The majority of legacy frameworks use the behavior of the <a href="/en-US/docs/Web/CSS/float"
+        <p>The majority of legacy frameworks use the behavior of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float"
                                                                         title="The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it."><code>float</code></a>
             property to float one column up next to another in order to create something that looks like a grid. Working
             through the process of creating a grid with floats shows you how this works and also introduces some more
             advanced concepts to build on the things you learned in the lesson on <a
-                    href="/en-US/docs/Learn/CSS/CSS_layout/Floats">floats and clearing</a>.</p>
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats">floats and clearing</a>.</p>
 
         <p>The easiest type of grid framework to create is a fixed width one — we just need to work out how much total
             width we want our design to be, how many columns we want, and how wide the gutters and columns should be. If
@@ -258,15 +258,15 @@ div:nth-of-type(2) {
         <p><img alt="" src="https://mdn.mozillademos.org/files/13901/simple-grid-finished.png"
                 style="display: block; height: 50px; margin: 0px auto; width: 952px;"></p>
 
-        <p>In the <a href="/en-US/docs/Web/HTML/Element/style"
+        <p>In the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"
                      title="The HTML &lt;style> element contains style information for a document, or part of a document."><code>&lt;style&gt;</code></a>
             element, add the following code, which gives the wrapper container a width of 980 pixels, with padding on
             the right hand side of 20 pixels. This leaves us with 960 pixels for our total column/gutter widths — in
             this case, the padding is subtracted from the total content width because we have set <a
-                    href="/en-US/docs/Web/CSS/box-sizing"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"
                     title="The box-sizing CSS property sets how the total width and height of an element is calculated."><code>box-sizing</code></a>
             to <code>border-box</code> on all elements on the site (see <a
-                    href="/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap#Changing_the_box_model_completely">Changing
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap#Changing_the_box_model_completely">Changing
                 the box model completely</a> for more explanation).</p>
 
         <pre class="brush: css">* {
@@ -300,9 +300,9 @@ body {
             divide that by 12, we know that each column should be 60 pixels wide.</p>
 
         <p>Our next step is to create a rule for the class <code>.col</code>, floating it left, giving it a <a
-                    href="/en-US/docs/Web/CSS/margin-left"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left"
                     title="The margin-left CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer."><code>margin-left</code></a>
-            of 20 pixels to form the gutter, and a <a href="/en-US/docs/Web/CSS/width"
+            of 20 pixels to form the gutter, and a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
                                                       title="The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area."><code>width</code></a>
             of 60 pixels. Add the following rule to the bottom of your CSS:</p>
 
@@ -321,7 +321,7 @@ body {
         </div>
 
         <p>Layout containers that we want to span more than one column need to be given special classes to adjust their
-            <a href="/en-US/docs/Web/CSS/width"
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
                title="The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area."><code>width</code></a>
             values to the required number of columns (plus gutters in between). We need to create an additional class to
             allow containers to span 2 to 12 columns. Each width is the result of adding up the column width of that
@@ -371,7 +371,7 @@ body {
         <h3 id="Creating_a_fluid_grid">Creating a fluid grid</h3>
 
         <p>Our grid works nicely, but it has a fixed width. We really want a flexible (fluid) grid that will grow and
-            shrink with the available space in the browser <a href="/en-US/docs/Glossary/viewport">viewport</a>. To
+            shrink with the available space in the browser <a href="https://developer.mozilla.org/en-US/docs/Glossary/viewport">viewport</a>. To
             achieve this we can turn the reference pixel widths into percentages.</p>
 
         <p>The equation that turns a fixed width into a flexible percentage-based one is as follows.</p>
@@ -390,9 +390,9 @@ body {
 
         <pre>20 / 960 = 0.02083333333</pre>
 
-        <p>So we need to replace the 20 pixel <a href="/en-US/docs/Web/CSS/margin-left"
+        <p>So we need to replace the 20 pixel <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left"
                                                  title="The margin-left CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer."><code>margin-left</code></a>
-            on our <code>.col</code> rule and the 20 pixel <a href="/en-US/docs/Web/CSS/padding-right"
+            on our <code>.col</code> rule and the 20 pixel <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right"
                                                               title="The padding-right CSS property sets the width of the padding area on the right of an element."><code>padding-right</code></a>
             on <code>.wrapper</code> with 2.08333333%.</p>
 
@@ -415,9 +415,9 @@ body {
   padding-right: 2.08333333%;
 }</pre>
 
-        <p>Not only have we given it a percentage <a href="/en-US/docs/Web/CSS/width"
+        <p>Not only have we given it a percentage <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
                                                      title="The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area."><code>width</code></a>,
-            we have also added a <a href="/en-US/docs/Web/CSS/max-width"
+            we have also added a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width"
                                     title="The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width."><code>max-width</code></a>
             property in order to stop the layout becoming too wide.</p>
 
@@ -466,12 +466,12 @@ body {
 
         <h3 id="Easier_calculations_using_the_calc_function">Easier calculations using the calc() function</h3>
 
-        <p>You could use the <a href="/en-US/docs/Web/CSS/calc()" title="REDIRECT calc [en-US]"><code>calc()</code></a>
+        <p>You could use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc()" title="REDIRECT calc [en-US]"><code>calc()</code></a>
             function to do the math right inside your CSS — this allows you to insert simple mathematical equations into
             your CSS values, to calculate what a value should be. It is especially useful when there is complex math to
             be done, and you can even compute a calculation that uses different units, for example "I want this
             element's height to always be 100% of its parent's height, minus 50px". See <a
-                    href="/en-US/docs/Web/API/MediaRecorder_API/Using_the_MediaRecorder_API#Keeping_the_interface_constrained_to_the_viewport_regardless_of_device_height_with_calc()">this
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API/Using_the_MediaRecorder_API#Keeping_the_interface_constrained_to_the_viewport_regardless_of_device_height_with_calc()">this
                 example from a MediaRecorder API tutorial</a>.</p>
 
         <p>Anyway, back to our grids! Any column that spans more than one column of our grid has a total width of 6.25%
@@ -522,7 +522,7 @@ body {
 
         <p>These are not the only approach. You could instead decide on your grid and then add the sizing information to
             the rules for existing semantic classes. For example, if you had a <a
-                    href="/en-US/docs/Web/HTML/Element/div"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
                     title="The HTML Content Division element (&lt;div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."><code>&lt;div&gt;</code></a>
             with a class of <code>content</code> on it that you wanted to span 8 columns, you could copy across the
             width from the <code>span8</code> class, giving you a rule like so:</p>
@@ -609,7 +609,7 @@ body {
 
         <h2 id="Flexbox_grids">Flexbox grids?</h2>
 
-        <p>If you read our previous article about <a href="/en-US/docs/Learn/CSS/CSS_layout/Flexbox">flexbox</a>, you
+        <p>If you read our previous article about <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">flexbox</a>, you
             might think that flexbox is the ideal solution for creating a grid system. There are many flexbox-based grid
             systems available and flexbox can solve many of the issues that we’ve already discovered when creating our
             grid above.</p>
@@ -652,15 +652,15 @@ body {
             allow us to have elements that add up to less than 100%. We set that container to <code>display: flex</code>.
         </p>
 
-        <p>On <code>.col</code> we set the <a href="/en-US/docs/Web/CSS/flex"
+        <p>On <code>.col</code> we set the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
                                               title="The flex CSS property sets how a flex item will grow or shrink to fit the space available in its flex container."><code>flex</code></a>
-            property's first value (<a href="/en-US/docs/Web/CSS/flex-grow"
+            property's first value (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow"
                                        title="The flex-grow CSS property sets the flex grow factor of a flex item main size. It specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor)."><code>flex-grow</code></a>)
-            to 1 so our items can grow, the second value (<a href="/en-US/docs/Web/CSS/flex-shrink"
+            to 1 so our items can grow, the second value (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
                                                              title="The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink."><code>flex-shrink</code></a>)
-            to 1 so the items can shrink, and the third value (<a href="/en-US/docs/Web/CSS/flex-basis"
+            to 1 so the items can shrink, and the third value (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
                                                                   title="The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing."><code>flex-basis</code></a>)
-            to <code>auto</code>. As our element has a <a href="/en-US/docs/Web/CSS/width"
+            to <code>auto</code>. As our element has a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width"
                                                           title="The width CSS property sets an element's width. By default, it sets the width of the content area, but if box-sizing is set to border-box, it sets the width of the border area."><code>width</code></a>
             set, <code>auto</code> will use that width as the <code>flex-basis</code> value.</p>
 
@@ -718,7 +718,7 @@ body {
             really interested in here.</p>
 
         <div class="note">
-            <p><strong>Note</strong>: <a class="new" href="/en-US/docs/" rel="nofollow">Normalize</a> is a really useful
+            <p><strong>Note</strong>: <a class="new" href="https://developer.mozilla.org/en-US/docs/" rel="nofollow">Normalize</a> is a really useful
                 little CSS library written by Nicolas Gallagher, which automatically does some useful basic layout fixes
                 and makes default element styling more consistent across browsers.</p>
         </div>
@@ -749,14 +749,14 @@ body {
 &lt;/div&gt;</pre>
 
         <p><br>
-            To start using Skeleton we need to give the wrapper <a href="/en-US/docs/Web/HTML/Element/div"
+            To start using Skeleton we need to give the wrapper <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
                                                                    title="The HTML Content Division element (&lt;div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."><code>&lt;div&gt;</code></a>
             a class of <code>container</code> — this is already included in our HTML. This centers the content with a
             maximum width of 960 pixels. You can see how the boxes now never become wider than 960 pixels.</p>
 
         <p>You can take a look in the skeleton.css file to see the CSS that is used when we apply this class. The <code>&lt;div&gt;</code>
             is centered using <code>auto</code> left and right margins, and a padding of 20 pixels is applied left and
-            right. Skeleton also sets the <a href="/en-US/docs/Web/CSS/box-sizing"
+            right. Skeleton also sets the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"
                                              title="The box-sizing CSS property sets how the total width and height of an element is calculated."><code>box-sizing</code></a>
             property to <code>border-box</code> like we did earlier, so the padding and borders of this element will be
             included in the total width.</p>

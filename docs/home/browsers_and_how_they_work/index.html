@@ -83,11 +83,11 @@
         <h3 id="TCP_Handshake">TCP Handshake</h3>
 
         <p>Once the IP address is known, the browser sets up a connection to the server via a <a class="glossaryLink"
-                                                                                                 href="/en-US/docs/Glossary/TCP_handshake"
+                                                                                                 href="https://developer.mozilla.org/en-US/docs/Glossary/TCP_handshake"
                                                                                                  title="TCP three-way handshake: TCP uses a three-way handshake (aka TCP-handshake, three message handshake, and/or SYN-SYN-ACK) to set up a TCP/IP connection over an IP based network. ">TCP
                 three-way handshake</a>. This mechanism is designed so that two entities attempting to communicate—in
             this case the browser and web server—can negotiate the parameters of the network TCP socket connection
-            before transmitting data, often over <a class="glossaryLink" href="/en-US/docs/Glossary/HTTPS"
+            before transmitting data, often over <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/HTTPS"
                                                     title="HTTPS: HTTPS (HTTP Secure) is an encrypted version of the HTTP protocol. It usually uses SSL or TLS to encrypt all communication between a client and a server. This secure connection allows clients to safely exchange sensitive data with a server, for example for banking activities or online shopping.">HTTPS</a>.
         </p>
 
@@ -99,7 +99,7 @@
         <h3 id="TLS_Negotiation">TLS Negotiation</h3>
 
         <p>For secure connections established over HTTPS, another "handshake" is required. This handshake, or rather the
-            <a class="glossaryLink" href="/en-US/docs/Glossary/TLS"
+            <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/TLS"
                title="TLS: Transport Layer Security (TLS), formerly known as Secure Sockets Layer (SSL), is a protocol used by applications to communicate securely across a network, preventing tampering with and eavesdropping on email, web browsing, messaging, and other protocols. Both SSL and TLS are client / server protocols that ensure communication privacy by using cryptographic protocols to provide security over a network. When a server and client communicate using TLS, it ensures that no third party can eavesdrop or tamper with any message.">TLS</a>
             negotiation, determines which cipher will be used to encrypt the communication, verifies the server, and
             establishes that a secure connection is in place before beginning the actual transfer of data. This requires
@@ -118,7 +118,7 @@
         <h2 id="Response">Response</h2>
 
         <p>Once we have an established connection to a web server, the browser sends an initial <a
-                    href="/en-US/docs/Web/HTTP/Methods">HTTP <code>GET</code> request</a> on behalf of the user, which
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP <code>GET</code> request</a> on behalf of the user, which
             for websites is most often an HTML file. Once the server receives the request, it will reply with relevant
             response headers and the contents of the HTML.</p>
 
@@ -141,7 +141,7 @@
 &lt;/html&gt;</pre>
 
         <p>This response for this initial request contains the first byte of data received. <a class="glossaryLink"
-                                                                                               href="/en-US/docs/Glossary/Time_to_First_Byte"
+                                                                                               href="https://developer.mozilla.org/en-US/docs/Glossary/Time_to_First_Byte"
                                                                                                title="Time to First Byte: Time to First Byte (TTFB) refers to the time between the browser requesting a page and when it receives the first byte of information from the server.  This time includes DNS lookup and establishing the connection using a TCP handshake and SSL handshake if the request is made over https.">Time
                 to First Byte</a> (TTFB) is the time between when the user made the request—say by clicking on a
             link—and the receipt of this first packet of HTML. The first chunk of content is usually 14kb of data.</p>
@@ -152,12 +152,12 @@
         <h3 id="TCP_Slow_Start_14kb_rule">TCP Slow Start / 14kb rule</h3>
 
         <p>The first response packet will be 14Kb. This is part of <a class="glossaryLink"
-                                                                      href="/en-US/docs/Glossary/TCP_slow_start"
+                                                                      href="https://developer.mozilla.org/en-US/docs/Glossary/TCP_slow_start"
                                                                       title="TCP slow start: ﻿TCP slow start helps buildup transmission speeds to the network's capabilities. It does this without initially knowing what those capabilities are and without creating congestion. TCP slow start is an algorithm used to detect the available bandwidth for packet transmission, and balances the speed of a network connection. It prevents the appearance of network congestion whose capabilities are initially unknown, and slowly increases the volume of information diffused until the network's maximum capacity is found.">TCP
                 slow start</a>, an algorithm which balances the speed of a network connection. Slow start gradually
             increases the amount of data transmitted until the network's maximum bandwidth can be determined.</p>
 
-        <p>In <a class="glossaryLink" href="/en-US/docs/Glossary/TCP_slow_start"
+        <p>In <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/TCP_slow_start"
                  title="TCP slow start: ﻿TCP slow start helps buildup transmission speeds to the network's capabilities. It does this without initially knowing what those capabilities are and without creating congestion. TCP slow start is an algorithm used to detect the available bandwidth for packet transmission, and balances the speed of a network connection. It prevents the appearance of network congestion whose capabilities are initially unknown, and slowly increases the volume of information diffused until the network's maximum capacity is found.">TCP
                 slow start</a>, after receipt of the initial packet, the server doubles the size of the next packet to
             around 28Kb. Subsequent packets increase in size until a predetermined threshold is reached, or congestion
@@ -179,12 +179,12 @@
         <h2 id="Parsing">Parsing</h2>
 
         <p>Once the browser receives the first chunk of data, it can begin parsing the information received. <a
-                    class="glossaryLink" href="/en-US/docs/Glossary/speculative_parsing"
+                    class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/speculative_parsing"
                     title="Parsing: Traditionally in browsers the HTML parser ran on the main thread and was blocked after a &lt;/script> tag until the script has been retrieved from the network and executed. Some HTML parser, such as Firefox since Firefox 4, support speculative parsing off of the main thread. It parses ahead while scripts are being downloaded and executed. The HTML parser starts speculative loads for scripts, style sheets and images it finds ahead in the stream and runs the HTML tree construction algorithm speculatively. The upside is that when a speculation succeeds, there's no need to reparse the part of the incoming file that was already scanned for scripts, style sheets and images. The downside is that there's more work lost when the speculation fails.">Parsing</a>
             is the step the browser takes to turn the data it receives over the network into the <a class="glossaryLink"
-                                                                                                    href="/en-US/docs/Glossary/DOM"
+                                                                                                    href="https://developer.mozilla.org/en-US/docs/Glossary/DOM"
                                                                                                     title="DOM: The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML document. The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document (e.g. an element, text string, or comment).">DOM</a>
-            and <a class="glossaryLink" href="/en-US/docs/Glossary/CSSOM"
+            and <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/CSSOM"
                    title="CSSOM: The CSS Object Model (CSSOM) is a map of all CSS selectors and relevant properties for each selector in the form of tree, with root node, sibling, descendant, child and other relationship. The CSSOM is very similar to the Document Object Model (DOM). Both of them are part of the critical rendering path which is a series of steps that must happen to properly render a website.">CSSOM</a>,
             which is used by the renderer to paint a page to the screen.</p>
 
@@ -199,16 +199,16 @@
 
         <h3 id="Building_the_DOM_tree">Building the DOM tree</h3>
 
-        <p>We describe five steps in the <a href="/en-US/docs/Web/Performance/Critical_rendering_path">critical
+        <p>We describe five steps in the <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path">critical
                 rendering path</a>.</p>
 
         <p>The first step is processing the HTML markup and building the DOM tree. HTML parsing involves <a
-                    href="/en-US/docs/Web/API/DOMTokenList">tokenization</a> and tree construction. HTML tokens include
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList">tokenization</a> and tree construction. HTML tokens include
             start and end tags, as well as attribute names and values. If the document is well-formed, parsing it is
             straightforward and faster. The parser parses tokenized input into the document, building up the document
             tree.</p>
 
-        <p>The DOM tree describes the content of the document. The <code><a href="/en-US/docs/Web/HTML/Element/html">&lt;html&gt;</a></code>
+        <p>The DOM tree describes the content of the document. The <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">&lt;html&gt;</a></code>
             element is the first tag and root node of the document tree. The tree reflects the relationships and
             hierarchies between different tags. Tags nested within other tags are child nodes. The greater the number of
             DOM nodes, the longer it takes to construct the DOM tree.</p>
@@ -219,7 +219,7 @@
         <p>When the parser finds non-blocking resources, such as an image, the browser will request those resources and
             continue parsing. Parsing can continue when a CSS file is encountered, but <code>&lt;script&gt;</code>
             tags—particularly those without an <code><a
-                        href="/en-US/docs/Web/JavaScript/Reference/Statements/async_function">async</a></code> or <code>defer</code>
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">async</a></code> or <code>defer</code>
             attribute—block rendering, and pause the parsing of HTML. Though the browser's preload scanner hastens this
             process, excessive scripts can still be a significant bottleneck.</p>
 
@@ -275,7 +275,7 @@
         <p>While the CSS is being parsed and the CSSOM created, other assets, including JavaScript files, are
             downloading (thanks to the preload scanner). JavaScript is interpreted, compiled, parsed and executed. The
             scripts are parsed into abstract syntax trees. Some browser engines take the <a class="glossaryLink new"
-                                                                                            href="/en-US/docs/Glossary/Abstract_Syntax_Tree"
+                                                                                            href="https://developer.mozilla.org/en-US/docs/Glossary/Abstract_Syntax_Tree"
                                                                                             rel="nofollow"
                                                                                             title="The definition of that term (Abstract Syntax Tree) has not been written yet; please consider contributing it!">Abstract
                 Syntax Tree</a> and pass it into an interpreter, outputting bytecode which is executed on the main
@@ -283,13 +283,13 @@
 
         <h4 id="Building_the_Accessibility_Tree">Building the Accessibility Tree</h4>
 
-        <p>The browser also builds an <a href="/en-US/docs/Learn/Accessibility">accessibility</a> tree that assistive
+        <p>The browser also builds an <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">accessibility</a> tree that assistive
             devices use to parse and interpret content. The accessibility object model (AOM) is like a semantic version
             of the DOM. The browser updates the accessibility tree when the DOM is updated. The accessibility tree is
             not modifiable by assistive technologies themselves.</p>
 
         <p>Until the AOM is built, the content is not accessible to <a
-                    href="/en-US/docs/Web/Accessibility/ARIA/ARIA_Screen_Reader_Implementors_Guide">screen readers</a>.
+                    href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Screen_Reader_Implementors_Guide">screen readers</a>.
         </p>
 
         <h2 id="Render">Render</h2>
@@ -306,7 +306,7 @@
             style tree, or render tree, construction starts with the root of the DOM tree, traversing each visible
             node.</p>
 
-        <p>Tags that aren't going to be displayed, like the <code><a href="/en-US/docs/Web/HTML/Element/head">&lt;head&gt;</a></code>
+        <p>Tags that aren't going to be displayed, like the <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">&lt;head&gt;</a></code>
             and its children and any nodes with <code>display: none</code>, such as the <code>script { display: none;
                 }</code> you will find in user agent stylesheets, are not included in the render tree as they will not
             appear in the rendered output. Nodes with <code>visibility: hidden</code> applied are included in the render
@@ -315,7 +315,7 @@
 
         <p>Each visible node has its CSSOM rules applied to it. The render tree holds all the visible nodes with content
             and computed styles -- matching up all the relevant styles to every visible node in the DOM tree, and
-            determining, based on the <a href="/en-US/docs/Web/CSS/Cascade">CSS cascade</a>, what the computed styles
+            determining, based on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade">CSS cascade</a>, what the computed styles
             are for each node.</p>
 
         <h3 id="Layout">Layout</h3>
@@ -345,7 +345,7 @@
         <h3 id="Paint">Paint</h3>
 
         <p>The last step in the critical rendering path is painting the individual nodes to the screen, the first
-            occurence of which is called the <a href="/en-US/docs/Glossary/first_meaningful_paint">first meaningful
+            occurence of which is called the <a href="https://developer.mozilla.org/en-US/docs/Glossary/first_meaningful_paint">first meaningful
                 paint</a>. In the painting or rasterization phase, the browser converts each box calculated in the
             layout phase to actual pixels on the screen. Painting involves drawing every visual part of an element to
             the screen, including text, colors, borders, shadows, and replaced elements like buttons and images. The
@@ -360,11 +360,11 @@
         <p>Painting can break the elements in the layout tree into layers. Promoting content into layers on the GPU
             (instead of the main thread on the CPU) improves paint and repaint performance. There are specific
             properties and elements that instantiate a layer, including <code><a
-                        href="/en-US/docs/Web/HTML/Element/video">&lt;video&gt;</a></code> and <code><a
-                        href="/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;</a></code>, and any element which has
-            the CSS properties of <a href="/en-US/docs/Web/CSS/opacity"><code>opacity</code></a>, a 3D <code><a
-                        href="/en-US/docs/Web/CSS/transform">transform</a></code>, <code><a
-                        href="/en-US/docs/Web/CSS/will-change">will-change</a></code>, and a few others. These nodes
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">&lt;video&gt;</a></code> and <code><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">&lt;canvas&gt;</a></code>, and any element which has
+            the CSS properties of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"><code>opacity</code></a>, a 3D <code><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">transform</a></code>, <code><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/will-change">will-change</a></code>, and a few others. These nodes
             will be painted onto their own layer, along with their descendants, unless a descendant necessitates its own
             layer for one (or more) of the above reasons.</p>
 
@@ -386,14 +386,14 @@
 
         <p>Once the main thread is done painting the page, you would think we would be "all set." That isn't necessarily
             the case. If the load includes JavaScript, that was correctly deferred, and only executed after the <code><a
-                        href="/en-US/docs/Web/API/GlobalEventHandlers/onload">onload</a></code> event fires, the main
+                        href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload">onload</a></code> event fires, the main
             thread might be busy, and not available for scrolling, touch, and other interactions.</p>
 
-        <p><a class="glossaryLink" href="/en-US/docs/Glossary/Time_to_Interactive"
+        <p><a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/Time_to_Interactive"
               title="Time to Interactive: Time to Interactive (TTI) is a non-standardized web performance 'progress' metric defined as the point in time when the last Long Task finished and was followed by 5 seconds of network and main thread inactivity.">Time
                 to Interactive</a> (TTI) is the measurement of how long it took from that first request which led to the
             DNS lookup and SSL connection to when the page is interactive -- interactive being the point in time after
-            the <a class="glossaryLink" href="/en-US/docs/Glossary/First_Contentful_Paint"
+            the <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/First_Contentful_Paint"
                    title='First Contentful Paint: First Contentful Paint (FCP) is when the browser renders the first bit of content from the DOM, providing the first feedback to the user that the page is actually loading. The question "Is it happening?" is "yes" when the first contentful paint completes.'>First
                 Contentful Paint</a> when the page responds to user interactions within 50ms. If the main thread is
             occupied parsing, compiling, and executing JavaScript, it is not available and therefore not able to

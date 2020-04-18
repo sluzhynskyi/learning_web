@@ -106,10 +106,9 @@
         </p>
 
         <p>In addition, there is no need to embed such large images on the page if it is being viewed on a mobile
-            screen. And conversely, a small <a href="/en-US/docs/Glossary/Raster_image">raster image</a> starts to look
+            screen. And conversely, a small <a href="https://developer.mozilla.org/en-US/docs/Glossary/Raster_image">raster image</a> starts to look
             grainy when displayed larger than its original size (a raster image is a set number of pixels wide and a set
-            number of pixels tall, as we saw when we looked at <a
-                    href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">vector
+            number of pixels tall, as we saw when we looked at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">vector
                 graphics</a>). This is called the <strong>resolution switching problem</strong>.</p>
 
         <p>Conversely, it is unnecessary to display a large image on a screen significantly smaller than the size it was
@@ -138,9 +137,9 @@
 
         <div class="note">
             <p><strong>Note</strong>: The new features discussed in this article — <code><a
-                            href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>/<code><a
-                            href="/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code>/<a
-                        href="/en-US/docs/Web/HTML/Element/picture"
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>/<code><a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code>/<a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
                         title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>
                 — are all supported in release versions of modern desktop and mobile browsers (including Microsoft's
                 Edge browser, although not Internet Explorer.) </p>
@@ -150,7 +149,7 @@
 
         <p>In this section, we'll look at the two problems illustrated above and show how to solve them using HTML's
             responsive image features. You should note that we will be focusing on the HTML <a
-                    href="/en-US/docs/Web/HTML/Element/img"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
                     title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>s
             for this section, as seen in the content area of the example above — the image in the site header is only
             for decoration, and therefore implemented using CSS background images. <a class="external"
@@ -162,15 +161,15 @@
 
         <p>So, what is the problem that we want to solve with resolution switching? We want to display identical image
             content, just larger or smaller depending on the device — this is the situation we have with the second
-            content image in our example. The standard <a href="/en-US/docs/Web/HTML/Element/img"
+            content image in our example. The standard <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
                                                           title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
             element traditionally only lets you point the browser to a single source file:</p>
 
         <pre class="brush: html">&lt;img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"&gt;</pre>
 
         <p>We can however use two new attributes — <code><a
-                        href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code> and <code><a
-                        href="/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code> — to provide several
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code> and <code><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code> — to provide several
             additional source images along with hints to help the browser pick the right one. You can see an example of
             this in our <a class="external"
                            href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html"
@@ -211,7 +210,7 @@
 
         <ol>
             <li>A <strong>media condition</strong> (<code>(max-width:600px)</code>) — you'll learn more about these in
-                the <a href="/en-US/docs/Learn/CSS">CSS topic</a>, but for now let's just say that a media condition
+                the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS topic</a>, but for now let's just say that a media condition
                 describes a possible state that the screen can be in. In this case, we are saying "when the viewport
                 width is 600 pixels or less".
             </li>
@@ -261,15 +260,15 @@
                 page to inspect the page loaded on the mobile using the desktop developer tools.<br>
                 <br>
                 To see which images were loaded, you can use Firefox DevTools's <a
-                        href="/en-US/docs/Tools/Network_Monitor">Network Monitor</a> tab.</p>
+                        href="https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor">Network Monitor</a> tab.</p>
         </div>
 
         <p>Older browsers that don't support these features will just ignore them. Instead, those browsers will go ahead
             and load the image referenced in the <code><a
-                        href="/en-US/docs/Web/HTML/Element/img#attr-src">src</a></code> attribute as normal.</p>
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-src">src</a></code> attribute as normal.</p>
 
         <div class="note">
-            <p><strong>Note</strong>: In the <a href="/en-US/docs/Web/HTML/Element/head"
+            <p><strong>Note</strong>: In the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
                                                 title="The HTML &lt;head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets."><code>&lt;head&gt;</code></a>
                 of the example linked above, you'll find the line <code>&lt;meta name="viewport"
                     content="width=device-width"&gt;</code>: this forces mobile browsers to adopt their real viewport
@@ -323,7 +322,7 @@
             different image display sizes. For example, a web page includes a large landscape shot with a person in the
             middle when viewed on a desktop browser. When viewed on a mobile browser, that same image is shrunk down,
             making the person in the image very small and hard to see. It would probably be better to show a smaller,
-            portrait image on mobile, which zooms in on the person. The <a href="/en-US/docs/Web/HTML/Element/picture"
+            portrait image on mobile, which zooms in on the person. The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
                                                                            title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>
             element allows us to implement just this kind of solution.</p>
 
@@ -334,15 +333,15 @@
 
         <pre class="brush: html">&lt;img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva"&gt;</pre>
 
-        <p>Let's fix this, with <a href="/en-US/docs/Web/HTML/Element/picture"
+        <p>Let's fix this, with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
                                    title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>!
             Like
-            <a href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content"><code>&lt;video&gt;</code>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content"><code>&lt;video&gt;</code>
                 and <code>&lt;audio&gt;</code></a>, the <code>&lt;picture&gt;</code> element is a wrapper containing
-            several <a href="/en-US/docs/Web/HTML/Element/source"
+            several <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"
                        title="The HTML &lt;source> element specifies multiple media resources for the &lt;picture>, the &lt;audio> element, or the &lt;video> element."><code>&lt;source&gt;</code></a>
             elements that provide different sources for the browser to choose from, followed by the all-important <a
-                    href="/en-US/docs/Web/HTML/Element/img"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
                     title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
             element. The code in <a class="external"
                                     href="http://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/responsive.html"
@@ -400,7 +399,7 @@
             started to load and interpret the page's CSS and JavaScript. This is a useful technique, which has shaved an
             average of 20% off page load times. However, it is not helpful for responsive images, hence the need to
             implement solutions like <code>srcset</code>. For example, you couldn't load the <a
-                    href="/en-US/docs/Web/HTML/Element/img"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
                     title="The HTML &lt;img> element embeds an image into the document."><code>&lt;img&gt;</code></a>
             element, then detect the viewport width with JavaScript, and then dynamically change the source image to a
             smaller one if desired. By then, the original image would already have been loaded, and you would load the
@@ -411,7 +410,7 @@
 
         <h3 id="Use_modern_image_formats_boldly">Use modern image formats boldly</h3>
 
-        <p>There are several exciting new image formats (such as <a href="/en-US/docs/Glossary/webp">WebP</a> and
+        <p>There are several exciting new image formats (such as <a href="https://developer.mozilla.org/en-US/docs/Glossary/webp">WebP</a> and
             JPEG-2000) that can maintain a low file size and high quality at the same time. However, browser support is
             spotty.</p>
 
@@ -458,7 +457,7 @@
 
         <p>You've reached the end of this article, but can you remember the most important information? You can find a
             detailed assessment that tests these skills at the end of the module; see <a
-                    href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page">Mozilla splash page</a>.
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page">Mozilla splash page</a>.
         </p>
 
         <h2 id="Summary">Summary</h2>
@@ -470,7 +469,7 @@
             <li><strong>Art direction</strong>: The problem whereby you want to serve cropped images for different
                 layouts — for example a landscape image showing a full scene for a desktop layout, and a portrait image
                 showing the main subject zoomed in for a mobile layout. You can solve this problem using the <a
-                        href="/en-US/docs/Web/HTML/Element/picture"
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
                         title="The HTML &lt;picture> element contains zero or more &lt;source> elements and one &lt;img> element to offer alternative versions of an image for different display/device scenarios."><code>&lt;picture&gt;</code></a>
                 element.
             </li>
@@ -478,13 +477,13 @@
                 narrow screen devices, as they don't need huge images like desktop displays do — and also optionally
                 that you want to serve different resolution images to high density/low density screens. You can solve
                 this problem by using <a
-                        href="/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">vector
-                    graphics</a> (SVG images) and the <code><a href="/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>
-                with <code><a href="/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code> attributes.
+                        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web">vector
+                    graphics</a> (SVG images) and the <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset">srcset</a></code>
+                with <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes">sizes</a></code> attributes.
             </li>
         </ul>
 
-        <p>This also draws to a close the entire <a href="/en-US/docs/Learn/HTML/Multimedia_and_embedding">Multimedia
+        <p>This also draws to a close the entire <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding">Multimedia
                 and embedding</a> module! The only thing to do now before moving on is to try our multimedia assessment,
             and see how you get on. Have fun!</p>
         <div class="next-steps">

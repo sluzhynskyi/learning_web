@@ -9,7 +9,7 @@
 {% block Content %}
     <div class="block">
         <span class="seoSummary"><strong>HTTP</strong> is</span> a <a class="glossaryLink"
-                                                                      href="/en-US/docs/Glossary/protocol"
+                                                                      href="https://developer.mozilla.org/en-US/docs/Glossary/protocol"
                                                                       title="protocol: A protocol is a system of rules that define how data is exchanged within or between computers. Communications between devices require that the devices agree on the format of the data that is being exchanged. The set of rules that defines a format is called a protocol.">protocol</a>
         which allows the fetching of resources, such as HTML documents. It is <span class="seoSummary">the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance text, layout description, images, videos, scripts, and more</span>.</p>
         <p><img alt="A Web document is the composition of different resources"
@@ -25,9 +25,9 @@
                  src="https://mdn.mozillademos.org/files/13673/HTTP%20&amp;%20layers.png"
                  style="float: left; height: 299px; padding-bottom: 15px; padding-right: 20px; width: 418px;">Designed
             in the early 1990s, HTTP is an extensible protocol which has evolved over time. It is an application layer
-            protocol that is sent over <a class="glossaryLink" href="/en-US/docs/Glossary/TCP"
+            protocol that is sent over <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/TCP"
                                           title="TCP: TCP (Transmission Control Protocol) is an important network protocol that lets two hosts connect and exchange data streams.  TCP guarantees the delivery of data and packets in the same order as they were sent.  Vint Cerf and Bob Kahn, who were DARPA scientists at the time, designed TCP in the 1970s.">TCP</a>,
-            or over a <a class="glossaryLink" href="/en-US/docs/Glossary/TLS"
+            or over a <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/TLS"
                          title="TLS: Transport Layer Security (TLS), formerly known as Secure Sockets Layer (SSL), is a protocol used by applications to communicate securely across a network, preventing tampering with and eavesdropping on email, web browsing, messaging, and other protocols. Both SSL and TLS are client / server protocols that ensure communication privacy by using cryptographic protocols to provide security over a network. When a server and client communicate using TLS, it ensures that no third party can eavesdrop or tamper with any message.">TLS</a>-encrypted
             TCP connection, though any reliable transport protocol could theoretically be used. Due to its
             extensibility, it is used to not only fetch hypertext documents, but also images and videos or to post
@@ -42,10 +42,10 @@
 
         <p>Each individual request is sent to a server, which handles it and provides an answer, called the
             <em>response</em>. Between the client and the server there are numerous entities, collectively called <a
-                    class="glossaryLink" href="/en-US/docs/Glossary/Proxy_server"
+                    class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/Proxy_server"
                     title="proxies: A proxy server is an intermediate program or computer used when navigating through different networks of the Internet. They facilitate access to content on the World Wide Web. A proxy intercepts requests and serves back responses; it may forward the requests, or not (for example in the case of a cache), and it may modify it (for example changing its headers, at the boundary between two networks).">proxies</a>,
             which perform different operations and act as gateways or <a class="glossaryLink"
-                                                                         href="/en-US/docs/Glossary/Cache"
+                                                                         href="https://developer.mozilla.org/en-US/docs/Glossary/Cache"
                                                                          title="caches: A cache (web cache or HTTP cache) is a component that stores HTTP responses temporarily so that it can be used for subsequent HTTP requests as long as it meets certain conditions.">caches</a>,
             for example.</p>
 
@@ -86,7 +86,7 @@
             generating the document on demand.</p>
 
         <p>A server is not necessarily a single machine, but several server software instances can be hosted on the same
-            machine. With HTTP/1.1 and the <a href="/en-US/docs/Web/HTTP/Headers/Host"
+            machine. With HTTP/1.1 and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host"
                                               title="The Host request header specifies the domain name of the server (for virtual hosting), and (optionally) the TCP port number on which the server is listening."><code>Host</code></a>
             header, they may even share the same IP address.</p>
 
@@ -118,7 +118,7 @@
 
         <h3 id="HTTP_is_extensible">HTTP is extensible</h3>
 
-        <p>Introduced in HTTP/1.0, <a href="/en-US/docs/Web/HTTP/Headers">HTTP headers</a> make this protocol easy to
+        <p>Introduced in HTTP/1.0, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers">HTTP headers</a> make this protocol easy to
             extend and experiment with. New functionality can even be introduced by a simple agreement between a client
             and a server about a new header's semantics.</p>
 
@@ -146,7 +146,7 @@
 
         <p>In order to mitigate this flaw, HTTP/1.1 introduced <em>pipelining</em> (which proved difficult to implement)
             and <em>persistent connections</em>: the underlying TCP connection can be partially controlled using the <a
-                    href="/en-US/docs/Web/HTTP/Headers/Connection"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection"
                     title="The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done."><code>Connection</code></a>
             header. HTTP/2 went a step further by multiplexing messages over a single connection, helping keep the
             connection warm and more efficient.</p>
@@ -164,7 +164,7 @@
         <p>Here is a list of common features controllable with HTTP.</p>
 
         <ul>
-            <li><em><a href="/en-US/docs/Web/HTTP/Caching">Caching</a></em><br>
+            <li><em><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching">Caching</a></em><br>
                 How documents are cached can be controlled by HTTP. The server can instruct proxies and clients, about
                 what to cache and for how long. The client can instruct intermediate cache proxies to ignore the stored
                 document.
@@ -178,12 +178,12 @@
             </li>
             <li><em>Authentication</em><br>
                 Some pages may be protected so that only specific users can access them. Basic authentication may be
-                provided by HTTP, either using the <a href="/en-US/docs/Web/HTTP/Headers/WWW-Authenticate"
+                provided by HTTP, either using the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate"
                                                       title="The HTTP WWW-Authenticate response header defines the authentication method that should be used to gain access to a resource."><code>WWW-Authenticate</code></a>
-                and similar headers, or by setting a specific session using <a href="/en-US/docs/Web/HTTP/Cookies">HTTP
+                and similar headers, or by setting a specific session using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">HTTP
                     cookies</a>.
             </li>
-            <li><em><a href="/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling">Proxy and tunneling</a></em><br>
+            <li><em><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling">Proxy and tunneling</a></em><br>
                 Servers or clients are often located on intranets and hide their true IP address from other computers.
                 HTTP requests then go through proxies to cross this network barrier. Not all proxies are HTTP proxies.
                 The SOCKS protocol, for example, operates at a lower level. Other protocols, like ftp, can be handled by
@@ -253,31 +253,31 @@ Content-Type: text/html
         <p>Requests consists of the following elements:</p>
 
         <ul>
-            <li>An HTTP <a href="/en-US/docs/Web/HTTP/Methods">method</a>, usually a verb like <a
-                        href="/en-US/docs/Web/HTTP/Methods/GET"
+            <li>An HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">method</a>, usually a verb like <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"
                         title="The HTTP GET method requests a representation of the specified resource. Requests using GET should only retrieve data."><code>GET</code></a>,
-                <a href="/en-US/docs/Web/HTTP/Methods/POST"
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"
                    title="The HTTP POST method sends data to the server. The type of the body of the request is indicated by the Content-Type header."><code>POST</code></a>
-                or a noun like <a href="/en-US/docs/Web/HTTP/Methods/OPTIONS"
+                or a noun like <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS"
                                   title="The HTTP OPTIONS method is used to describe the communication options for the target resource. The client can specify a URL for the OPTIONS method, or an asterisk (*) to refer to the entire server."><code>OPTIONS</code></a>
-                or <a href="/en-US/docs/Web/HTTP/Methods/HEAD"
+                or <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD"
                       title="The HTTP HEAD method requests the headers that are returned if the specified resource would be requested with an HTTP GET method. Such a request can be done before deciding to download a large resource to save bandwidth, for example."><code>HEAD</code></a>
                 that defines the operation the client wants to perform. Typically, a client wants to fetch a resource
-                (using <code>GET</code>) or post the value of an <a href="/en-US/docs/Web/Guide/HTML/Forms">HTML
+                (using <code>GET</code>) or post the value of an <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms">HTML
                     form</a> (using <code>POST</code>), though more operations may be needed in other cases.
             </li>
             <li>The path of the resource to fetch; the URL of the resource stripped from elements that are obvious from
-                the context, for example without the <a class="glossaryLink" href="/en-US/docs/Glossary/protocol"
+                the context, for example without the <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/protocol"
                                                         title="protocol: A protocol is a system of rules that define how data is exchanged within or between computers. Communications between devices require that the devices agree on the format of the data that is being exchanged. The set of rules that defines a format is called a protocol.">protocol</a>
-                (<code>http://</code>), the <a class="glossaryLink" href="/en-US/docs/Glossary/domain"
+                (<code>http://</code>), the <a class="glossaryLink" href="https://developer.mozilla.org/en-US/docs/Glossary/domain"
                                                title='domain: A domain is an authority within the internet that controls its own resources. Its "domain name" is a way to address this authority as part of the hierarchy in a URL - usually the most memorable part of it, for instance a brand name.'>domain</a>
                 (here, <code>developer.mozilla.org</code>), or the TCP <a class="glossaryLink"
-                                                                          href="/en-US/docs/Glossary/port"
+                                                                          href="https://developer.mozilla.org/en-US/docs/Glossary/port"
                                                                           title="port: For a computer connected to a network with an IP address, a port is a communication endpoint. Ports are designated by numbers, and below 1024 each port is associated by default with a specific protocol.">port</a>
                 (here, <code>80</code>).
             </li>
             <li>The version of the HTTP protocol.</li>
-            <li>Optional <a href="/en-US/docs/Web/HTTP/Headers">headers</a> that convey additional information for the
+            <li>Optional <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers">headers</a> that convey additional information for the
                 servers.
             </li>
             <li>Or a body, for some methods like <code>POST</code>, similar to those in responses, which contain the
@@ -296,36 +296,36 @@ Content-Type: text/html
 
         <ul>
             <li>The version of the HTTP protocol they follow.</li>
-            <li>A <a href="/en-US/docs/Web/HTTP/Status">status code</a>, indicating if the request was successful, or
+            <li>A <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">status code</a>, indicating if the request was successful, or
                 not, and why.
             </li>
             <li>A status message, a non-authoritative short description of the status code.</li>
-            <li>HTTP <a href="/en-US/docs/Web/HTTP/Headers">headers</a>, like those for requests.</li>
+            <li>HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers">headers</a>, like those for requests.</li>
             <li>Optionally, a body containing the fetched resource.</li>
         </ul>
 
         <h2 id="APIs_based_on_HTTP">APIs based on HTTP</h2>
 
-        <p>The most commonly used API based on HTTP is the <a href="/en-US/docs/Web/API/XMLHttpRequest"
+        <p>The most commonly used API based on HTTP is the <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"
                                                               title="Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing."><code>XMLHttpRequest</code></a>
             API, which can be used to exchange data between a <a class="glossaryLink"
-                                                                 href="/en-US/docs/Glossary/user_agent"
+                                                                 href="https://developer.mozilla.org/en-US/docs/Glossary/user_agent"
                                                                  title="user agent: A user agent is a computer program representing a person, for example, a browser in a Web context.">user
-                agent</a> and a server. The modern <a href="/en-US/docs/Web/API/Fetch_API"
+                agent</a> and a server. The modern <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
                                                       title="The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set."><code>Fetch
                     API</code></a> provides the same features with a more powerful and flexible feature set.</p>
 
-        <p>Another API, <a href="/en-US/docs/Web/API/Server-sent_events">server-sent events</a>, is a one-way service
+        <p>Another API, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events">server-sent events</a>, is a one-way service
             that allows a server to send events to the client, using HTTP as a transport mechanism. Using the <a
-                    href="/en-US/docs/Web/API/EventSource"
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
                     title="The EventSource interface is web content's interface to server-sent events. An EventSource instance opens a persistent connection to an HTTP server, which sends events in text/event-stream format."><code>EventSource</code></a>
             interface, the client opens a connection and establishes event handlers. The client browser automatically
-            converts the messages that arrive on the HTTP stream into appropriate <a href="/en-US/docs/Web/API/Event"
+            converts the messages that arrive on the HTTP stream into appropriate <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event"
                                                                                      title="The Event interface represents an event which takes place in the DOM."><code>Event</code></a>
             objects, delivering them to the event handlers that have been registered for the events' <a
-                    href="/en-US/docs/Web/API/Event/type"
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/Event/type"
                     title="The type read-only property of the Event interface returns a string containing the event's type. It is set when the event is constructed and is the name commonly used to refer to the specific event, such as click, load, or error."><code>type</code></a>
-            if known, or to the <a href="/en-US/docs/Web/API/EventSource/onmessage"
+            if known, or to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource/onmessage"
                                    title="The onmessage property of the EventSource interface is an EventHandler called when a message event is received, that is when a message is coming from the source."><code>onmessage</code></a>
             event handler if no type-specific event handler was established.</p>
 
